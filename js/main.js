@@ -14,10 +14,5 @@ $(function() {
     return false;
   });
 
-
-
-
-
-
 });
 
