@@ -1,288 +1,221 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/anime.css">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <title>Karinのportfolio</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <title>Karin's portfolio</title>
 </head>
-
 <body>
-  <!-- header -->
-  <header>
-    <div class="container">
-      <ul class="header-wrapper">
 
-        <li class="header-left">
-          <h1 class="header-title">
-            <a href="../index.html">Karin<span class="header-title-span">の</span>Portfolio</a>
-          </h1><!-- /.header-title -->
-        </li><!-- /.header-left -->
+  <header class="header">
 
-        <li class="header-right">
-          <ul class="header-nav">
-            <li class="header-nav-item">
-              <a href="index.html#about">about</a></li>
-            <li class="header-nav-item">
-              <a href="index.html#skill">skill</a></li>
-            <li class="header-nav-item">
-              <a href="index.html#portfolio">portfolio</a></li>
-            <li class="header-nav-item">
-              <a href="index.html#contact">contact</a></li>
-          </ul><!-- /.header-nav -->
-        </li><!-- /.header-right -->
+    <div class="wrapper header__wrapper">
+      <h1 class="header__title">
+        <a href="./index.html">
+          Karin's Portfolio
+        </a>
+      </h1><!-- /.header__title -->
+      <ul class="header__items">
+        <li class="header__item">
+          <a href="#about">
+            about
+          </a>
+        </li><!-- /.header__item -->
+        
+        <li class="header__item">
+          <a href="#skills">
+            skills
+          </a>
+        </li><!-- /.header__item -->
 
-      </ul><!-- /.header-wrapper -->
-    </div><!-- /.container -->
-  </header>
+        <li class="header__item">
+          <a href="#portfolios">
+            portfolios
+          </a>
+        </li><!-- /.header__item -->
 
+        <li class="header__item">
+          <a href="#contact">
+            contact
+          </a>
+        </li><!-- /.header__item -->
 
-  <section class="hero-area">
-  </section><!-- /.hero-area -->
+      </ul><!-- /.header__items -->
+    </div><!-- /.header__wrapper -->
+  </header><!-- /.header -->
 
+  <section class="mv">
+    <div class="wrapper">
+      <div class="container mv__container">
+        <div class="mv__textWrapper">
+        </div><!-- /.mv__textWrapper -->
 
-  <!-- about -->
-  <section id="about" class="about section wow fadeInUp">
-    <div class="container">
-      <ul class="about-items">
+        <div class="mv__imgWrapper">
+          <img src="./img/Humaaans - Standing.png" alt="メイン画像">
+          <div class="mv__imgWrapper__bg">
+          </div><!-- /.mv__imgWrapper__bg -->
+        </div><!-- /.mv__imgWrapper -->
+      </div><!-- /.container -->
+    </div><!-- /.wrapper -->
+  </section><!-- /.mv -->
 
-        <li class="about-item-left">
-          <img src="./img/about.PNG" alt="icon">
-        </li><!-- /.about-item-left -->
+  <section id="about" class="about">
+    <div class="wrapper">
+      <div class="container about__container">
 
-        <li class="about-item-right">
-          <h2 class="about-title">ナカニシ カリン</h2>
-          <p class="about-text">
-            英文学科を2019年卒業後、語学力をさらに伸ばすためにカナダに一年留学しました。
+        <div class="about__container__imgWrapper">
+          <div class="about__container__img">
+            <img src="./img/about.PNG" alt="">
+            <div class="-shadow">
+            </div><!-- /.-shadow -->
+          </div><!-- /.about__container__img -->
+          <div class="about__container__name">
+            <h2>
+              Nakanishi
+              <br>
+              Karin
+            </h2>
+            <p>
+              <a href="https://github.com/N-Tarin">
+                <i class="fab fa-github-square -github"></i>
+              </a>
+              <a href="https://twitter.com/home?lang=ja">
+                <i class="fa fa-twitter -twitter" aria-hidden="true"></i>
+              </a>            
+              <a href="https://note.com/nakanuxxx">
+                <i class="far fa-file -note"></i>
+              </a>
+            </p>
+          </div><!-- /.about__container__name -->
+        </div><!-- /.about__container__img -->
+
+        <div class="about__container__text">
+          <p>
+            初めまして！ナカニシと申します。
+            <br>
+            英文学科を2019年卒業後、語学力をさらに伸ばすために
+            <br>
+            カナダに一年留学しました。
           </p>
-          <p class="about-text">
+          <p>
             帰国後現在は、コーダー、フロントエンジニアを目指して
-            <br> 2020年の6月から HTML, CSS, Sass, JavaScript, jQuery, PHP, WordPress の勉強をしています。
-            <br> <a href="https://twitter.com/home?lang=ja"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-            </i>
+            <br>
+            2020年の6月から
+            <br>
+            HTML, CSS, Sass, JavaScript, jQuery, Vue.js, WordPress
+            <br>
+            の勉強をしています。
           </p>
-
-        </li><!-- /.about-item-right -->
-      </ul><!-- /.about-items -->
-
-    </div><!-- /.container -->
-  </section><!-- /.section -->
-
-  <!-- skill -->
-  <section id="skill" class="skill section wow fadeInUp">
-    <div class="container">
-      <h2 class="section-title">Skill</h2>
-      <ul class="skill-items">
-
-        <li class="skill-item">
-          <div class="skill-item-img">
-            <img src="./img/html.png" alt="">
-          </div><!-- /.skill-item-img -->
-          <h3 class="skill-title">HTML5</h3><!-- /.skill-title -->
           <p>
-            Adobe XDを用いたデザインカンプからのコーディング可能です。
+            現在は勉強やウェブサイトを
+            <br>
+            「作る工程に慣れたい」というのもあり、
+            <br>
+            xdデザインからの模写10サイト終わらせるというのを目標に、
+            <br>
+            勉強しています。
           </p>
-        </li><!-- /.skill-item -->
-
-        <li class="skill-item">
-          <div class="skill-item-img">
-            <img src="./img/css.png" alt="">
-          </div><!-- /.skill-item-img -->
-          <h3 class="skill-title">CSS3</h3><!-- /.skill-title -->
           <p>
-            レスポンシブデザインでのページ作成、フレームワークを使用したページの実装が可能です。
+            日々の学びは
+            <a class="-note" href="https://note.com/nakanuxxx">
+              note
+            </a>
+            や 
+            <a class="-twitter" href="https://twitter.com/home?lang=ja">
+              Twitter
+            </a>
+            などを使い
+            <br>
+            アウトプットするよう心がけています！
           </p>
-        </li><!-- /.skill-item -->
+        </div><!-- /.about__container__text -->
+      </div><!-- /.container -->
+    </div><!-- /.wrapper -->
+  </section><!-- /.about -->
 
-        <li class="skill-item">
-          <div class="skill-item-img">
-            <img src="./img/js.png" alt="">
-          </div><!-- /.skill-item-img -->
-          <h3 class="skill-title">JavaScript</h3><!-- /.skill-title -->
-          <p>
-            プラグインの使用、簡易アプリ制作、jQueryを使ったスライダー、アコーディオン、スクロールなどの機能を追加できます。
-          </p>
-        </li><!-- /.skill-item -->
+  <section class="skils">
+    <div class="wrapper">
+      <h2 class="title">
+        skills
+      </h2><!-- /.title -->
 
-        <li class="skill-item">
-          <div class="skill-item-img">
-            <img src="./img/wordpress.png" alt="">
-          </div><!-- /.skill-item-img -->
-          <h3 class="skill-title">WordPress</h3><!-- /.skill-title -->
-          <p>
-            自作テーマを作成し、本番環境へのアップロードが可能です。（自作ウェブサイトあり）
-          </p>
-        </li><!-- /.skill-item -->
+      <div class="container skill__container">
+        <ul class="skill__items">
+          <li class="skill__item">
+            <div class="skill__item__img">
+              <!-- <img src="./img/iconfinder_html_308440.png" alt="html"> -->
+            </div><!-- /.skill__item__img -->
+            <div class="skill__item__text">
+              <h3>HTML5</h3>
+              <p>
 
-        <li class="skill-item">
-          <div class="skill-item-img">
-            <img src="./img/sass.png" alt="">
-          </div><!-- /.skill-item-img -->
-          <h3 class="skill-title">Sass</h3><!-- /.skill-title -->
-          <p>
-            変数を用いて、わかりやすくSassを書くように意識をしています。
-          </p>
-        </li><!-- /.skill-item -->
-      
-      </ul><!-- /.skill-items -->
-    </div><!-- /.container -->
-  </section><!-- /.skill -->
+                AdobeXDを用いたデザインカンプからのコーディングが可能です。
+              </p>
+            </div><!-- /.skill__item__text -->
+          </li><!-- /.skill__item -->
+
+          <li class="skill__item">
+            <div class="skill__item__img">
+              <!-- <img src="./img/iconfinder_css_308436.png" alt="html"> -->
+            </div><!-- /.skill__item__img -->
+            <div class="skill__item__text">
+              <h3>CSS3</h3>
+              <p>
+                予測、再利用、保守、拡張を意識してコードを書き、レスポンシブデザインでのページ作成、フレームワークを使用したページの実装が可能です。
+              </p>
+            </div><!-- /.skill__item__text -->
+          </li><!-- /.skill__item -->
+
+          <li class="skill__item">
+            <div class="skill__item__img">
+              <!-- <img src="./img/iconfinder_javascript_308441.png" alt="html"> -->
+            </div><!-- /.skill__item__img -->
+            <div class="skill__item__text">
+              <h3>Javascript</h3>
+              <p>
+                簡易アプリ制作、jQueryでのプラグインを使ったスライダー、アコーディオン、スクロールなどの機能を追加できます。
+              </p>
+            </div><!-- /.skill__item__text -->
+          </li><!-- /.skill__item -->
+
+          <li class="skill__item">
+            <div class="skill__item__img">
+              <!-- <img src="./img/iconfinder_wordpress_334823.png" alt="html"> -->
+            </div><!-- /.skill__item__img -->
+            <div class="skill__item__text">
+              <h3>WordPress</h3>
+              <p>
+                自作テーマを作成し、本番環境へのアップロードが可能です。
+                <br>
+                （自作ウェブサイトあり）
+              </p>
+            </div><!-- /.skill__item__text -->
+          </li><!-- /.skill__item -->
+
+        </ul><!-- /.skill__items -->
+      </div><!-- /.container -->
+    </div><!-- /.wrapper -->
+  </section><!-- /.skills -->
 
 
-  <!-- portfolio -->
-  <section id="portfolio" class="portfolio section wow fadeInUp">
-    <div class="container">
-      <h2 class="section-title">Portfolio</h2>
+  <section class="portfolio">
+    <div class="wrapper">
+      <h2 class="title">
+        portfolios
+      </h2><!-- /.title -->
 
-      <ul class="portfolio-items">
+      <div class="container">
 
-        <li id="portfolio5" class="portfolio-item">
-
-          <div class="portfolio-img">
-            <img src="./img/portfolio5.png" alt="portfolio5">
-          </div><!-- /.portfolio-img -->
-          
-          <div class="portfolio-text">
-            <h3 class="portfolio-title">WordPress制作<br>（企業ページ）</h3><!-- /.portfolio-title -->
-            <p class="portfolio-subtitle">HTML, CSS, JS, WordPress</p>
-            <p>
-              実案件で使用したものを模写コーディングしました。
-              <br>adobe XDのデザインカンプからコーディングを行い、WordPressへの環境構築、本番環境へのアップロードまで行いました。
-            </p>
-            <h4 class="portfolio-point">コーディングした上でのポイント</h4><!-- /.portfolio-point -->
-            <ul>
-              <li>
-                「Smart Custom Fields」を使用した繰り返し記事の作成
-              </li>
-              <li>
-                「MW WP Form」を使用したお問い合わせページ
-              </li>
-            </ul>
-            <p>
-              Id: test
-              <br>pass: test
-            </p>
-          </div><!-- /.portfolio-text -->
-          
-          <a href="http://nkrin.com/maha"></a>
-        </li><!-- /.portfolio-item -->
-
-        <li id="portfolio2" class="portfolio-item">
-          <div class="portfolio-img">
-            <img src="./img/portfolio2.png" alt="portfolio2">
-          </div><!-- /.portfolio-img -->
-          <div class="portfolio-text">
-            <h3 class="portfolio-title">オンライン留学<br>（架空企業ページ）</h3><!-- /.portfolio-title -->
-            <p class="portfolio-subtitle">HTML, CSS, JS, PHP, MYSQL</p>
-            <p>
-              
-              
-            </p>
-            <h4 class="portfolio-point">コーディングした上でのポイント</h4><!-- /.portfolio-point -->
-            <ul>
-              <li>
-                UI/UXを意識し、jQueryを使った機能。
-              </li>
-              <li>
-                PHPでお問い合わせフォームを実装。
-              </li>
-              <li>
-                JSで簡易クイズアプリ作成
-              </li>
-            </ul>
-            
-          </div><!-- /.portfolio-text -->
-          <a href="http://nkrin.com/online-ryugaku-site"></a>
-        </li><!-- /.portfolio-item -->
-        
-        <li id="portfolio1" class="portfolio-item">
-          <div class="portfolio-img">
-            <img src="./img/portfolio1.png" alt="portfolio1">
-          </div><!-- /.portfolio-img -->
-          <div class="portfolio-text">
-            <h3 class="portfolio-title">LP制作</h3><!-- /.portfolio-title -->
-            <p class="portfolio-subtitle">HTML, CSS</p>
-            <p>趣味で作っているエコラップの紹介サイトを作ってみました。サイト内でショップに飛ぶように作りました。</p>
-          </div><!-- /.portfolio-text -->
-          <a href="https://karinakanishi.github.io/Beco/"></a>
-        </li><!-- /.portfolio-item -->
-        
-      </ul><!-- /.portfolio-items -->
-    </div><!-- /.container -->
+      </div><!-- /.container -->
+    </div><!-- /.wrapper -->
   </section><!-- /.portfolio -->
-
-
-
-  <!-- contact -->
-  <section id="contact" class="contact section wow fadeInUp">
-    <div class="container">
-      <h2 class="section-title">Contact</h2>
-      <p class="section-subtitle">
-        お気軽にお問い合わせくださいませ。
-        下記フォームよりご記入ください。
-      </p>
-      <div class="contact-items">
-
-        <form class="contact-form"
-        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScAb6JSkJRIQB7Iw0dK8wlMecSk4VvKQp6tTB9Cfj8RsxWSpA/formResponse"
-        method="post" name="myForm">
-
-          <div class="contact-item">
-            <label for="name">お名前</label>
-            <input id="name" type="text" name="entry.2005620554" autocomplete="name" required>
-          </div><!-- /.contact-item -->
-
-          <div class="contact-item">
-            <label for="email">メールアドレス</label>
-            <input id="email" class="contact-item" type="email" name="entry.1045781291" value="" autocomplete="email" required>
-          </div><!-- /.contact-item -->
-
-          <div class="contact-item">
-            <label for="textarea">お問い合わせ内容</label>
-            <textarea class="contact-item" name="entry.839337160" required></textarea>
-          </div><!-- /.contact-item -->
-
-          <div class="contact-item">
-            <input class="btn btn-submit" type="submit" value="送信">
-          </div><!-- /.contact-item -->
-
-        </form><!-- /.contact-form -->
-
-      </div><!-- /.contact-items -->
-    </div><!-- /.container -->
-  </section><!-- /.section -->
-
-
-  <!-- page-top -->
-  <p class="page-top"><a href="">▲</a></p>
-
-
-  <!-- footer -->
-  <footer>
-    <div class="container">
-      <div class="footer-wrapper">
-        <ul class="footer-nav">
-          <li class="footer-nav-item">
-            <a href="./index.html#about">about</a></li>
-          <li class="footer-nav-item">
-            <a href="./index.html#skill">skill</a></li>
-          <li class="footer-nav-item">
-            <a href="./index.html#portfolio">portfolio</a></li>
-          <li class="footer-nav-item">
-            <a href="./index.html#contact">contact</a></li>
-      </ul><!-- /.portfolio -->
-      </div><!-- /.footer-wrapper -->
-    </div><!-- /.container -->
-  </footer><!-- /.footer -->
-
 
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <script src="./js/main.js"></script>
-  <script src="./js/wow.min.js"></script>
-  <script>new WOW().init(); </script>
+  <script src="https://kit.fontawesome.com/59f9f0717a.js" crossorigin="anonymous"></script>
 </body>
-
 </html>
