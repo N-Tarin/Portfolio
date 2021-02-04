@@ -24,14 +24,14 @@
         
         <li class="header__item">
           <a href="#skills">
-            skills
+            skill
             <span>能力</span>
           </a>
         </li><!-- /.header__item -->
 
         <li class="header__item">
           <a href="#portfolios">
-            portfolios
+            portfolio
             <span>作品</span>
           </a>
         </li><!-- /.header__item -->
@@ -57,7 +57,7 @@
             my portfolio
           </h2><!-- /.mv__title -->
           <p class="mv__text">
-            上から下隅々までご覧ください！
+            上から下、隅々までご覧ください！
           </p><!-- /.mv__text -->
         </div><!-- /.mv__textWrapper -->
 
@@ -83,7 +83,8 @@
           <div class="about__container__name">
             <h2>
               Nakanishi
-              <br>
+            </h2>
+            <h2>
               Karin
             </h2>
             <p>
@@ -102,27 +103,31 @@
 
         <div class="about__container__text">
           <p>
-            初めまして！ナカニシと申します。
+            初めまして！ナカニシ カリンと申します。
             <br>
             英文学科を2019年卒業後、語学力をさらに伸ばすため、カナダに一年留学しました。
           </p>
           <p>
             帰国後現在は、コーダー、フロントエンジニアを目指して、
-            2020年の6月から
             <br>
-            独学で勉強をしています。
+            2020年の6月から独学で勉強をしています。
           </p>
           <p>
-            現在はウェブサイトを「作る工程に慣れたい」というのもあり、xdデザインからの模写10サイト終わらせるというのを目標に、勉強しています。
+            現在はウェブサイトを<span>「作る工程に慣れたい」</span>というのもあり、
+            <br>
+            <span>xdデザインからの"模写10サイト終わらせる"</span>というのを目標に、勉強しています。
           </p>
           <p>
             日々の学びは
             <a class="-note" href="https://note.com/nakanuxxx">
-              note
+              <span>note</span>
             </a>
             や 
             <a class="-twitter" href="https://twitter.com/home?lang=ja">
-              Twitter
+              <span>Twitter、</span>
+            </a>
+            <a class="-github" href="https://github.com/N-Tarin">
+              <span>github</span>
             </a>
             などを使い、アウトプットするよう心がけています！
           </p>
@@ -131,10 +136,13 @@
     </div><!-- /.wrapper -->
   </section><!-- /.about -->
 
-  <section class="skils">
+  <section id="skills" class="skill">
     <div class="wrapper">
       <h2 class="title">
-        skills
+        skill
+        <span>
+          今まで勉強してきたこと
+        </span>
       </h2><!-- /.title -->
 
       <div class="container skill__container">
@@ -169,7 +177,7 @@
               <img src="./img/icons8-javascript-128.png" alt="js">
             </div><!-- /.skill__item__img -->
             <div class="skill__item__text">
-              <h3>Javascript</h3>
+              <h3>JavaScript</h3>
               <p>
                 簡易アプリ制作、jQueryでのプラグインを使ったスライダー、アコーディオン、スクロールなどの機能を追加できます。
               </p>
@@ -199,14 +207,76 @@
   <section class="portfolio">
     <div class="wrapper">
       <h2 class="title">
-        portfolios
+        portfolio
+        <span>
+          これまでの作品
+        </span>
+      </h2><!-- /.title -->
+
+      <ul class="portfolio__items">
+
+        <li class="portfolio__item">
+          <div class="portfolio__imgWrapper">
+            <a href="http://nkrin.com/BecoWrap/">
+              <img src="./img/portfolio1.png" alt="BecoWrap">
+            </a>
+          </div><!-- /.portfolio__imgWrapper -->
+          <div class="portfolio__textWrapper">
+            <h3 class="portfolio__title">
+              BecoWrapサイト
+            </h3><!-- /.portfolio__title -->
+
+
+          </div><!-- /.portfolio__textWrapper -->
+        </li><!-- /.portfolio__item -->
+
+      </ul><!-- /.portfolio__items -->
+    </div><!-- /.wrapper -->
+  </section><!-- /.portfolio -->
+
+
+  <section class="contact">
+    <div class="wrapper">
+      <h2 class="title">
+        Contact
+        <span>
+          お気軽にご連絡ください
+        </span>
       </h2><!-- /.title -->
 
       <div class="container">
 
+        <form action="" class="form">
+
+          <div class="form__item">
+            <label for="name">お名前</label>
+            <input id="name" type="text">
+          </div><!-- /.form__item -->
+
+          <div class="form__item">
+            <label for="mail">メールアドレス</label>
+            <input id="mail" type="email">
+          </div><!-- /.form__item -->
+
+          <div class="form__item">
+            <label for="num">お電話</label>
+            <input id="num" type="number">
+          </div><!-- /.form__item -->
+
+          <div class="form__item">
+            <label for="text">お問い合わせ内容</label>
+            <textarea  id="text" name="message"></textarea><!-- /# -->
+          </div><!-- /.form__item -->
+
+          <button class="button form__button -pink">
+            送信する
+          </button><!-- /.button -->
+
+        </form><!-- /.form -->
+        
       </div><!-- /.container -->
     </div><!-- /.wrapper -->
-  </section><!-- /.portfolio -->
+  </section><!-- /.contact -->
 
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <script src="./js/main.js"></script>

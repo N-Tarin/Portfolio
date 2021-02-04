@@ -2,7 +2,6 @@ body {
   color: #191847;
   font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
   scroll-behavior: smooth;
-  font-family: 'Abril Fatface', cursive;
   overflow-x: hidden;
 }
 
@@ -13,13 +12,26 @@ body {
 }
 
 .title {
+  font-family: 'Abril Fatface', cursive;
   font-size: 40px;
   text-align: center;
+  padding: 50px 0 0;
+}
+
+.title span {
+  display: block;
+  font-size: 12px;
+  padding: 15px 0 0;
 }
 
 
 /* header */
+.header {
+  background-color: #f5fafa;
+}
+
 .header__wrapper {
+  font-family: 'Abril Fatface', cursive;
   padding: 30px 0 50px;
   text-align: center;
 }
@@ -46,11 +58,16 @@ body {
 
 
 /* mv */
+.mv {
+  background-color: #f5fafa;
+}
+
 .mv__container {
   display: flex;
+  font-family: 'Abril Fatface', cursive;
   justify-content: space-between;
-  margin: 0 0 100px;
   max-width: 900px;
+  padding: 0 0 80px;
   width: 100%;
 }
 
@@ -106,8 +123,10 @@ body {
 
 /* about */
 .about__container {
-  margin: 150px auto;
+  margin: 70px auto;
   max-width: 700px;
+  padding: 50px 0 0;
+  position: relative;
   width: 100%;
 }
 
@@ -117,12 +136,12 @@ body {
 
 .about__container__img {
   position: relative;
+  margin: 0 0 0 70px;
 }
 
 .about__container__img img {
-  max-width: 350px;
-  width: 100%;
   position: relative;
+  width: 350px;
   z-index: 2;
 }
 
@@ -146,19 +165,25 @@ body {
   border: 5px solid #d3f2f5;
   width: 350px;
   height: 350px;
-  top: 20px;
-  left: 20px;
+  top: 15px;
+  left: 15px;
   z-index: 1;
 }
 
 .about__container__name {
+  padding: 200px 0 0 10px;
   position: relative;
+  z-index: 4;
 }
 
 .about__container__name h2 {
+  background-color: #ecfafc;
+  display: inline-block;
+  font-family: 'Abril Fatface', cursive;
   font-size: 40px;
   line-height: 1.2;
-  padding: 200px 0 0 50px;
+  padding: 5px 20px;
+  margin: 5px 0;
 }
 
 .about__container__name h2::before {
@@ -176,11 +201,13 @@ body {
 }
 
 .about__container__name p {
-  padding: 10px 0 0 55px;
+  padding: 10px 0 0 20px;
 }
 
 .about__container__name p a {
   font-size: 25px;
+  position: relative;
+  z-index: 4;
 }
 
 .-github:hover {
@@ -202,15 +229,33 @@ body {
 .about__container__text {
   padding: 100px 0 0;
   margin: 0 auto;
-  /* max-width: 500px; */
-  /* width: 100%; */
 }
 
 .about__container__text p {
   font-size: 18px;
   line-height: 1.8;
-  text-align: left;
   padding: 0 0 30px;
+  position: relative;
+  text-align: left;
+  z-index: 4;
+}
+
+.about__container__text p span {
+  font-weight: bold;
+}
+
+.about__container__text::after {
+  background-image: url(../img/42@2x.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: "";
+  height: 800px;
+  position: absolute;
+  top: 300px;
+  right: -20px;
+  opacity: 0.6;
+  width: 800px;
+  z-index: 2;
 }
 
 
@@ -220,6 +265,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
+  max-width: 930px;
   padding: 50px 0 100px;
   width: 100%;
 }
@@ -234,15 +280,12 @@ body {
   width: 100%;
 }
 
-.skill__item:nth-child(even) {
-
-}
-
-
 .skill__item__img img {
   background-color: #89c5cb;
+  border-radius: 999px;
   height: auto;
-  width: 100px;
+  padding: 10px;
+  width: 80px;
 }
 
 .skill__item__text {
@@ -256,6 +299,101 @@ body {
 }
 
 .skill__item__text p {
-  line-height: 1.4;
+  line-height: 1.6;
   text-align: left;
 }
+
+
+/* portfolio */
+.portfolio {
+  background-color: #f5fafa;
+}
+
+.portfolio__items {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0 0;
+}
+
+.portfolio__item {
+  display: flex;
+  margin: 30px auto;
+  max-width: 800px;
+  padding: 10px;
+  width: 100%;
+}
+
+.portfolio__imgWrapper {
+  padding: 10px;
+  background-color: white;
+}
+
+.portfolio__imgWrapper a img {
+  max-width: 320px;
+  width: 100%;
+}
+
+.portfolio__textWrapper {
+  background-color: white;
+  padding: 20px;
+}
+
+
+/* contact */
+.contact {
+  margin: 100px 0 106px 0;
+}
+
+.form {
+  margin: 80px auto 0;
+  max-width: 785px;
+  width: 100%;
+}
+
+.form__item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 auto 20px;
+}
+
+.form__item:last-of-type {
+  margin: 0 auto;
+}
+
+.form__item label {
+  padding: 25px 0 0;
+}
+
+.form__item input,
+.form__item select,
+.form__item textarea {
+  background-color: #f5fafa;
+  border: none;
+  height: 56px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.form__item textarea {
+  height: 156px;
+  margin: 0 0 56px 0;
+  resize: none;
+}
+
+.form__button {
+  background-color: #89c5cb;
+  color: white;
+  display: block;
+  font-size: 16px;
+  margin: 0 auto;
+  max-width: 376px;
+  padding: 22px 70px;
+}
+
+.form__button::after {
+  display: none;
+}
+
+
