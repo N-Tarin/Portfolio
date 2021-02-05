@@ -30,7 +30,7 @@
         </li><!-- /.header__item -->
 
         <li class="header__item">
-          <a href="#portfolios">
+          <a href="#portfolio">
             portfolio
             <span>作品</span>
           </a>
@@ -53,7 +53,8 @@
         <div class="mv__textWrapper">
           <h2 class="mv__title">
             Welcome to
-            <br>
+          </h2><!-- /.mv__title -->
+          <h2 class="mv__title">
             my portfolio
           </h2><!-- /.mv__title -->
           <p class="mv__text">
@@ -127,7 +128,7 @@
               <span>Twitter、</span>
             </a>
             <a class="-github" href="https://github.com/N-Tarin">
-              <span>github</span>
+              <span>GitHub</span>
             </a>
             などを使い、アウトプットするよう心がけています！
           </p>
@@ -193,7 +194,9 @@
               <p>
                 自作テーマを作成し、本番環境へのアップロードが可能です。
                 <br>
-                （自作ウェブサイトあり）
+                <span>
+                  （自作ウェブサイトあり）
+                </span>
               </p>
             </div><!-- /.skill__item__text -->
           </li><!-- /.skill__item -->
@@ -204,7 +207,7 @@
   </section><!-- /.skills -->
 
 
-  <section class="portfolio">
+  <section id="portfolio" class="portfolio">
     <div class="wrapper">
       <h2 class="title">
         portfolio
@@ -217,30 +220,102 @@
 
         <li class="portfolio__item">
           <div class="portfolio__imgWrapper">
-            <a href="http://nkrin.com/BecoWrap/">
-              <img src="./img/portfolio1.png" alt="BecoWrap">
-            </a>
+            <p class="portfolio__img">
+              <img src="./img/becowrap.png" alt="BecoWrap">
+            </p><!-- /.portfolio__img -->
           </div><!-- /.portfolio__imgWrapper -->
+
           <div class="portfolio__textWrapper">
             <h3 class="portfolio__title">
-              BecoWrapサイト
+              商品紹介サイト
             </h3><!-- /.portfolio__title -->
+            <p class="portfolio__language">
+              WordPress,&nbsp;&nbsp;CSS,&nbsp;&nbsp;jQuery
+            </p><!-- /.portfolio__language -->
 
+            <p class="portfolio__text">
+              私が個人で販売している商品のサイトです。
+              <br>
+              制作期間はデザインからコーディングまでおおよそ一週間程です。
+              商品販売はBASEのAPIを使用しており、商品画像をクリックしてBASEの購入ページに飛ぶようにしました。
+              女性をメインに考えたサイトなのでナチュラルで優しい雰囲気で仕上げました。
+            </p><!-- /.portfolio__text -->
+          </div><!-- /.portfolio__textWrapper -->
+        </li><!-- /.portfolio__item -->
 
+        <li class="portfolio__item">
+          <div class="portfolio__imgWrapper">
+            <p class="portfolio__img">
+              <img src="./img/portfolio2.png" alt="calendarapp">
+            </p><!-- /.portfolio__img -->
+          </div><!-- /.portfolio__imgWrapper -->
+
+          <div class="portfolio__textWrapper">
+            <h3 class="portfolio__title">
+              カレンダーアプリ
+            </h3><!-- /.portfolio__title -->
+            <p class="portfolio__language">
+              jQuery,&nbsp;&nbsp;HTML,&nbsp;&nbsp;CSS
+            </p><!-- /.portfolio__language -->
+
+            <p class="portfolio__text">
+              日付を選択し、
+              <br>
+              予定を書き込めるようになっています。
+            </p><!-- /.portfolio__text -->
+          </div><!-- /.portfolio__textWrapper -->
+        </li><!-- /.portfolio__item -->
+
+        <li class="portfolio__item">
+          <div class="portfolio__imgWrapper">
+            <p class="portfolio__img">
+              <img src="./img/todo.png" alt="todoapp">
+            </p><!-- /.portfolio__img -->
+          </div><!-- /.portfolio__imgWrapper -->
+
+          <div class="portfolio__textWrapper">
+            <h3 class="portfolio__title">
+            To Do アプリ
+            </h3><!-- /.portfolio__title -->
+            <p class="portfolio__language">
+              Vue.js,&nbsp;&nbsp;HTML,&nbsp;&nbsp;CSS
+            </p><!-- /.portfolio__language -->
+
+            <p class="portfolio__text">
+              やることを書き込み、Addボタンで
+              <br>
+              下に表示されます。
+              <br>
+              All, Active, Completedを選択し、
+              <br>
+              「予定のタスク」「終わったタスク」など、
+              <br>
+              分けることもできます。
+            </p><!-- /.portfolio__text -->
           </div><!-- /.portfolio__textWrapper -->
         </li><!-- /.portfolio__item -->
 
       </ul><!-- /.portfolio__items -->
+
+      <p class="portfolio__lastText">
+        ソースコードは
+        <a href="https://github.com/N-Tarin">
+        <span class="-github">
+          GitHub
+        </span>
+        </a>
+        に載せております！（一部閲覧不可）
+      </p><!-- /.portfolio__lastText -->
     </div><!-- /.wrapper -->
   </section><!-- /.portfolio -->
 
 
-  <section class="contact">
+  <section id="contact" class="contact">
     <div class="wrapper">
       <h2 class="title">
         Contact
         <span>
-          お気軽にご連絡ください
+          Twitter DMでもご連絡お待ちしております!
         </span>
       </h2><!-- /.title -->
 
