@@ -6,7 +6,12 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <!-- 手書き風 -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
   <title>Karin's portfolio</title>
 </head>
 <body>
@@ -17,28 +22,28 @@
       <ul class="header__items">
         <li class="header__item">
           <a href="#about">
-            about
+            About
             <span>私について</span>
           </a>
         </li><!-- /.header__item -->
         
         <li class="header__item">
           <a href="#skills">
-            skill
+            Skill
             <span>能力</span>
           </a>
         </li><!-- /.header__item -->
 
         <li class="header__item">
           <a href="#portfolio">
-            portfolio
+            Portfolio
             <span>作品</span>
           </a>
         </li><!-- /.header__item -->
 
         <li class="header__item">
           <a href="#contact">
-            contact
+            Contact
             <span>お問い合わせ</span>
           </a>
         </li><!-- /.header__item -->
@@ -71,80 +76,72 @@
     </div><!-- /.wrapper -->
   </section><!-- /.mv -->
 
-  <section id="about" class="about">
+
+  <section class="about">
     <div class="wrapper">
-      <div class="container about__container">
+      <div class="about__container">
 
-        <div class="about__container__imgWrapper">
-          <div class="about__container__img">
+        <div class="about__head">
+          <div class="about__head__imgWrapper">
             <img src="./img/about.PNG" alt="">
-            <div class="-shadow">
-            </div><!-- /.-shadow -->
-          </div><!-- /.about__container__img -->
-          <div class="about__container__name">
             <h2>
-              Nakanishi
+              Nakanishi Karin
             </h2>
-            <h2>
-              Karin
-            </h2>
-            <p>
-              <a href="https://github.com/N-Tarin">
-                <i class="fab fa-github-square -github"></i>
-              </a>
-              <a href="https://twitter.com/home?lang=ja">
-                <i class="fa fa-twitter -twitter" aria-hidden="true"></i>
-              </a>            
-              <a href="https://note.com/nakanuxxx">
-                <i class="far fa-file -note"></i>
-              </a>
-            </p>
-          </div><!-- /.about__container__name -->
-        </div><!-- /.about__container__img -->
+          </div><!-- /.about__head__imgWrapper -->
+          <div class="about__head__textWraper">
 
-        <div class="about__container__text">
-          <p>
-            初めまして！ナカニシ カリンと申します。
-            <br>
-            英文学科を2019年卒業後、語学力をさらに伸ばすため、カナダに一年留学しました。
-          </p>
-          <p>
-            帰国後現在は、コーダー、フロントエンジニアを目指して、
-            <br>
-            2020年の6月から独学で勉強をしています。
-          </p>
-          <p>
-            現在はウェブサイトを<span>「作る工程に慣れたい」</span>というのもあり、
-            <br>
-            <span>xdデザインからの"模写10サイト終わらせる"</span>というのを目標に、勉強しています。
-          </p>
-          <p>
-            日々の学びは
-            <a class="-note" href="https://note.com/nakanuxxx">
-              <span>note</span>
-            </a>
-            や 
-            <a class="-twitter" href="https://twitter.com/home?lang=ja">
-              <span>Twitter、</span>
-            </a>
-            <a class="-github" href="https://github.com/N-Tarin">
-              <span>GitHub</span>
-            </a>
-            などを使い、アウトプットするよう心がけています！
-          </p>
-        </div><!-- /.about__container__text -->
-      </div><!-- /.container -->
+          </div><!-- /.about__head__textWraper -->
+        </div><!-- /.about__head -->
+
+        <div class="about__foot">
+          <div class="about__foot__text">
+            <p>
+              初めまして！<span>ナカニシ カリン</span>と申します。
+              <br>
+              英文学科を2019年卒業後、語学力をさらに伸ばすため、カナダに一年留学しました。
+            </p>
+            <p>
+              帰国後現在は、コーダー、フロントエンジニアを目指して、
+              <br>
+              2020年の6月から独学で勉強をしています。
+            </p>
+            <p>
+              現在はウェブサイトを<span>「作る工程に慣れたい」</span>というのもあり、
+              <br>
+              <span>xdデザインからの"模写10サイト終わらせる"</span>というのを目標に、勉強しています。
+            </p>
+            <p>
+              日々の学びは
+              <a class="-note" href="https://note.com/nakanuxxx">
+                <span>note</span>
+              </a>
+              や 
+              <a class="-twitter" href="https://twitter.com/home?lang=ja">
+                <span>Twitter、</span>
+              </a>
+              <a class="-github" href="https://github.com/N-Tarin">
+                <span>GitHub</span>
+              </a>
+              などを使い、アウトプットするよう心がけています！
+            </p>
+          </div><!-- /.about__foot__text -->
+        </div><!-- /.about__foot -->
+
+      </div><!-- /.about__container -->
     </div><!-- /.wrapper -->
   </section><!-- /.about -->
 
+
   <section id="skills" class="skill">
     <div class="wrapper">
-      <h2 class="title">
-        skill
-        <span>
+      <div class="titleContainer">
+        <h2 class="title">
+          Skill
+        </h2><!-- /.title -->
+        <p class="lead">
           今まで勉強してきたこと
-        </span>
-      </h2><!-- /.title -->
+        </p><!-- /.lead -->
+      </div><!-- /.titleContainer -->
 
       <div class="container skill__container">
         <ul class="skill__items">
@@ -209,13 +206,14 @@
 
   <section id="portfolio" class="portfolio">
     <div class="wrapper">
-      <h2 class="title">
-        portfolio
-        <span>
+      <div class="titleContainer">
+        <h2 class="title">
+          Portfolio
+        </h2><!-- /.title -->
+        <p class="lead">
           これまでの作品
-        </span>
-      </h2><!-- /.title -->
-
+        </p><!-- /.lead -->
+      </div><!-- /.titleContainer -->
       <ul class="portfolio__items">
 
         <li class="portfolio__item">
@@ -312,13 +310,14 @@
 
   <section id="contact" class="contact">
     <div class="wrapper">
-      <h2 class="title">
-        Contact
-        <span>
-          Twitter DMでもご連絡お待ちしております!
-        </span>
-      </h2><!-- /.title -->
-
+      <div class="titleContainer">
+        <h2 class="title">
+          Contact
+        </h2><!-- /.title -->
+        <p class="lead">
+          Twitter DMでもお待ちしております！
+        </p><!-- /.lead -->
+      </div><!-- /.titleContainer -->
       <div class="container">
 
         <form action="" class="form">
