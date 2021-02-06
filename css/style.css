@@ -154,13 +154,26 @@ input, button, a {
 
 .about__head {
   display: flex;
+  position: relative;
 }
 
 .about__head__imgWrapper {
-  display: inline-block;
   background-color: white;
   border: 2px solid black;
-  padding: 30px 10px 70px 10px;
+  display: inline-block;
+  padding: 30px 10px 0px 10px;
+  z-index: 2;
+}
+
+.about__head__imgWrapper::after {
+  content: "";
+  background-color:  #ff6630;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  left: -20px;
+  width: 340px;
+  z-index: 1;
 }
 
 .about__head__imgWrapper img {
@@ -168,6 +181,12 @@ input, button, a {
   width: 100%;
 }
 
+.about__head__imgWrapper h2 {
+  font-family: 'Caveat', cursive;
+  font-size: 35px;
+  padding: 15px 10px;
+  text-align: center;
+}
 
 .-github:hover {
   color: #55c500;
@@ -217,7 +236,7 @@ input, button, a {
 .skill__item {
   background-color: white;
   border: 2px solid black;
-  box-shadow: 0 0 8px rgb(197, 197, 197);
+  /* box-shadow: 0 0 8px rgb(197, 197, 197); */
   max-width: 220px;
   margin: 10px 0;
   padding: 30px 20px;
@@ -290,7 +309,7 @@ input, button, a {
 }
 
 .portfolio__img::after {
-  background-color: #89c5cb;
+  background-color:  #ff6630;
   content: "";
   height: 430px;
   max-width: 300px;
@@ -303,7 +322,7 @@ input, button, a {
 }
 
 .portfolio__item:nth-child(even) .portfolio__imgWrapper .portfolio__img::after {
-  background-color: #89c5cb;
+  background-color:  #ff6630;
   content: "";
   height: 430px;
   opacity: 0.8;
