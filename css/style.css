@@ -1,4 +1,5 @@
 body {
+  background-color: #fcf8f2;
   font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -16,33 +17,22 @@ body {
 }
 
 .title {
-  display: inline-block;
-  background-color: #ffc730;
   color: #0739cc;
+  display: inline-block;
   font-family: 'Oswald', sans-serif;  font-size: 40px;
   font-weight: bold;
   letter-spacing: 4px;
-  padding: 10px 20px ;
-  margin: 0 auto;
-  text-align: center;
+  padding: 70px 0 0;
 }
 
 .lead {  
-  color: #216045;
+  color: #0739cc;
   font-size: 12px;
   font-weight: bold;
   padding: 15px 0 0;
 }
 
-.lead::before {
-  content: "<";
-  font-weight: bold;
-}
 
-.lead::after {
-  content: ">";
-  font-weight: bold;
-}
 
 :hover {
   transition: all .2s;
@@ -55,6 +45,10 @@ input, button, a {
 
 
 /* header */
+.header {
+  background-color: #f7f0de;
+}
+
 .header__wrapper {
   color: #0739cc;
   font-family: 'Oswald', sans-serif; 
@@ -89,8 +83,18 @@ input, button, a {
 
 
 /* mv */
+.mv {
+  background-color: #f7f0de;
+
+}
+
 .mv__container {
-  border: 2px solid black;
+  margin: 0 auto 70px;
+  padding: 0 0 70px;
+  position: relative;
+}
+
+.mv__cardWrapper {
   display: flex;
   font-family: 'Oswald', sans-serif;
   height: 400px;
@@ -99,10 +103,36 @@ input, button, a {
   margin: 0 auto;  
   position: relative;
   width: 100%;
+  z-index: 4;
+}
+
+.mv__cardWrapper::before {
+  background-color: #ff6630;
+  content: "";
+  height: 400px;
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  width: 600px;
+  z-index: 1;
+}
+
+.mv__cardWrapper::after {
+  content: "";
+  background-image: url(../img/Humaaans\ -\ Standing.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50px;
+  right: -135px;
   z-index: 2;
+  height: 350px;
+  width: 270px;
+  transform: scale(-1,1);
 }
 
 .mv__card {
+  border: 2px solid black;
   position: relative;
   z-index: 2;
 }
@@ -112,6 +142,14 @@ input, button, a {
   border-bottom: 2px solid #000;
   padding: 10px;
   text-align: right;
+  position: relative;
+  z-index: 2;
+}
+
+.mv__head i {
+  display: block;
+  background-color: white;
+  padding: 20px 20px;
 }
 
 .mv__card img {
@@ -121,37 +159,40 @@ input, button, a {
   z-index: 2;
 }
 
-.mv__title::after {
-  background-color: #ff6630;
-  content: "";
-  height: 400px;
-  position: absolute;
-  top: -20px;
-  left: -20px;
-  width: 600px;
-  z-index: 1;
-}
-
-.mv__head i {
-  display: block;
-  background-color: white;
-  padding: 20px 20px;
-}
-
 .mv__textWrapper {
   margin: 80px 0 0 80px;
   position: relative;
   z-index: 3;
 }
 
-.mv__title {
+.mv__card::before {
+  content: "Welcome to";
   color: #216045;
   font-family: 'Playfair Display', serif;
   font-size: 70px;
   line-height: 1.3;
   margin: 0 200px 0 -230px;
   text-align: left;
+  position: absolute;
+  top: 30%;
+  left: 160px;
   width: 400px;
+  z-index: 3;
+}
+
+.mv__card::after {
+  content: "my portfolio";
+  color: #216045;
+  font-family: 'Playfair Display', serif;
+  font-size: 70px;
+  line-height: 1.3;
+  margin: 0 200px 0 -230px;
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 160px;
+  width: 400px;
+  z-index: 3;
 }
 
 .mv__text {
@@ -172,9 +213,10 @@ input, button, a {
   z-index: 3;
 }
 
+
 /* about */
 .about__container {
-  margin: 0 auto;    
+  margin: 0 auto 100px;    
   max-width: 700px;
   position: relative;
   width: 100%;
@@ -188,25 +230,39 @@ input, button, a {
   width: 100%;
 }
 
+.about__head::before {
+  content: "";
+  border-radius: 50%;
+  background-color: #ff6630;
+  width: 70px;
+  position: absolute;
+  top: -20px;
+  left: 65px;
+  height: 70px;
+  z-index: 3;
+
+}
+
+.about__head::after {
+  content: "";
+  border-radius: 50%;
+  border: 1px solid #216045;
+  width: 70px;
+  position: absolute;
+  top: -25px;
+  left: 60px;
+  height: 70px;
+  z-index: 4;
+}
+
 .about__head__imgWrapper {
   background-color: white;
-  /* border: 2px solid black; */
   box-shadow: 0 0 13px rgb(197, 197, 197);
   display: inline-block;
+  margin: 0 0 0 90px;
   padding: 30px 10px 0px 10px;
   z-index: 2;
 }
-
-/* .about__head::after {
-  content: "";
-  background-color:  #ff6630;
-  height: 400px;
-  position: absolute;
-  top: -20px;
-  left: -20px;
-  width: 320px;
-  z-index: 1;
-} */
 
 .about__head__imgWrapper img {
   max-width: 300px;
@@ -221,18 +277,27 @@ input, button, a {
   text-align: center;
 }
 
-.about__head__textWrapper {
-  background-color: #0739cc;
-  color: white;
-  display: inline-block;
+.about__head__text{
+  color: #ff6630;
   font-family: 'Oswald', sans-serif; 
-  font-size: 43px;
-  height: 130px;
-  margin: 150px 0 0 -50px;
-  padding: 20px;
+  font-size: 20px;
+  line-height: 1.3;
+  margin: 150px 0 0 -45px;
+  position: relative;
+  z-index: 2;
+}
+.about__head__sns {
+  width: 100px;
+  margin: 15px 0 0 -110px;
+}
+
+.about__head__sns a {
+  color: #ffc730;
+  font-size: 30px;
   position: relative;
   z-index: 3;
 }
+
 
 .-github:hover {
   color: #55c500;
@@ -251,7 +316,7 @@ input, button, a {
 }
 
 .about__foot__text {
-  padding: 100px 0 0;
+  padding: 50px 0 0;
   max-width: 700px;
   margin: 0 auto;
   width: 100%;
@@ -271,6 +336,10 @@ input, button, a {
 }
 
 /* skill */
+.skill {
+  background-color: #f7f0de;
+}
+
 .skill__items {
   display: flex;
   flex-wrap: wrap;
@@ -431,6 +500,7 @@ input, button, a {
 
 /* contact */
 .contact {
+  background-color: #f7f0de;
   padding: 0 0 100px 0;
 }
 
