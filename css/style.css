@@ -11,6 +11,7 @@ html {
 .wrapper {
   margin: 0 auto;
   max-width: 1000px;
+  padding: 0 20px;
   position: relative;
   width: 100%;
 }
@@ -64,6 +65,10 @@ input, button, a {
   color: #2db393;
 }
 
+.sp_only {
+  display: none;
+}
+
 
 /* header */
 .header {
@@ -82,7 +87,7 @@ input, button, a {
   justify-content: space-between;
   margin: 0 auto;
   max-width: 420px;
-  padding: 8px 0 0;
+  padding: 8px 20px 0;
   text-align: center;
   width: 100%;
 }
@@ -94,7 +99,7 @@ input, button, a {
 
 .header__item a span {
   display: block;
-  font-size: 12px;
+  font-size: 8px;
   padding: 5px 0 0;
 }
 
@@ -110,7 +115,7 @@ input, button, a {
 
 .mv__container {
   margin: 0 auto 20px;
-  padding: 0 0 70px;
+  padding: 0 40px 70px;
   position: relative;
 }
 
@@ -195,7 +200,7 @@ input, button, a {
   text-align: left;
   position: absolute;
   top: 30%;
-  left: 160px;
+  left: 90px;
   width: 400px;
   z-index: 3;
 }
@@ -210,7 +215,7 @@ input, button, a {
   text-align: left;
   position: absolute;
   top: 50%;
-  left: 160px;
+  left: 90px;
   width: 400px;
   z-index: 3;
 }
@@ -288,6 +293,7 @@ input, button, a {
   position: relative;
   z-index: 2;
 }
+
 .about__head__sns {
   width: 100px;
   margin: 15px 0 0 -110px;
@@ -327,6 +333,7 @@ input, button, a {
 
 .skill__container {
   position: relative;
+  width: 100%;
 }
 
 .skill__items {
@@ -345,7 +352,7 @@ input, button, a {
   height: 60px;
   margin: 0 auto;
   position: absolute;
-  bottom: 80px;
+  bottom: 90px;
   left: -2.5%;
   width: 105%;
 }
@@ -353,8 +360,9 @@ input, button, a {
 .skill__item {
   background-color: white;
   border: 2px solid black;
+  height: 360px;
   max-width: 220px;
-  margin: 10px 0;
+  margin: 20px 0;
   padding: 30px 20px;
   position: relative;
   text-align: center;
@@ -393,7 +401,7 @@ input, button, a {
 .portfolio__items {
   display: flex;
   flex-direction: column;
-  padding: 80px 0 50px
+  padding: 50px 0 50px
 }
 
 .portfolio__items::after {
@@ -464,19 +472,26 @@ input, button, a {
   z-index: 3;
 }
 
-.portfolio__img:hover {
-  transform: scaleY(-10px);
-}
-
 .portfolio__img img {
   width: 100%;
 }
 
-.portfolio__img h2 {
+.portfolio__img a {
+  display: block;
   font-family: 'Caveat', cursive;
   font-size: 35px;
   padding: 15px 10px;
   text-align: center;
+}
+
+.portfolio__img a::after {
+  content: "\f054";
+  font-family: "fontAwesome";
+  font-size: 12px;
+}
+
+.portfolio__img a:hover {
+  color: #ff6630;
 }
 
 .portfolio__textWrapper {
@@ -492,7 +507,6 @@ input, button, a {
   max-width: 400px;
   text-align: center;
   width: 100%;
-
 }
 
 .portfolio__title {
@@ -509,6 +523,7 @@ input, button, a {
 }
 
 .portfolio__lastText {
+  line-height: 1.4;
   padding: 0 0 100px;
   text-align: center;
 }
@@ -543,11 +558,10 @@ input, button, a {
 }
 
 .form__item label {
-  padding: 25px 0 0;
+  padding: 25px 0 10px;
 }
 
 .form__item input,
-.form__item select,
 .form__item textarea {
   background-color: white;
   border: none;
@@ -580,4 +594,587 @@ input, button, a {
 }
 
 
+/* footer */
+footer {
+  background-color: #f0ddae;
+  padding: 30px 20px 10px 0;
+  text-align: right;
+}
 
+.footer__text a i {
+  color: #216045;
+  font-size: 40px;
+}
+
+@media screen and (max-width: 940px) {
+  .mv__cardWrapper::after {
+    content: "";
+    background-image: url(../img/Humaaans\ -\ Standing.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 150px;
+    right: 0px;
+    z-index: 2;
+    height: 250px;
+    width: 170px;
+    transform: scale(-1,1);
+  }
+  
+  .mv__card::before {
+    content: "Welcome to";
+    color: #216045;
+    font-family: 'Playfair Display', serif;
+    font-size: 70px;
+    line-height: 1.3;
+    margin: 0 200px 0 -230px;
+    text-align: left;
+    position: absolute;
+    top: 30%;
+    left: 250px;
+    width: 400px;
+    z-index: 3;
+  }
+  
+  .mv__card::after {
+    content: "my portfolio";
+    color: #216045;
+    font-family: 'Playfair Display', serif;
+    font-size: 70px;
+    line-height: 1.3;
+    margin: 0 200px 0 -230px;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 250px;
+    width: 400px;
+    z-index: 3;
+  }
+  
+  .skill__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 450px;
+    padding: 50px 0 100px;
+    width: 100%;
+  }
+
+  .skill__items::before {
+    background-color: #ff6630;
+    content: "";
+    height: 60px;
+    margin: 0 auto;
+    position: absolute;
+    top: 400px;
+    left: 21%;
+    width: 513px;
+  }
+  
+  .skill__items::after {
+    background-color: #ff6630;
+    content: "";
+    height: 60px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 90px;
+    left: 21%;
+    width: 513px;
+  }  
+
+  .portfolio__imgWrapper::after {
+    background-color:  #ff6630;
+    content: "";
+    max-height: 327px;
+    max-width: 370px;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .portfolio__item:nth-child(even) .portfolio__imgWrapper::after {
+    background-color:  #ff6630;
+    content: "";
+    height: 100%;
+    max-height: 327px;
+    max-width: 370px;
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .form__item {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 auto 0px;
+  }
+
+.form__item input,
+.form__item textarea {
+  background-color: white;
+  border: none;
+  height: 56px;
+  max-width: 800px;
+  width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .skill__items::before {
+    background-color: #ff6630;
+    content: "";
+    height: 60px;
+    margin: 0 auto;
+    position: absolute;
+    top: 400px;
+    left: 14.5%;
+    width: 513px;
+  }
+  
+  .skill__items::after {
+    background-color: #ff6630;
+    content: "";
+    height: 60px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 90px;
+    left: 14.5%;
+    width: 513px;
+  }  
+}
+
+@media screen and (max-width: 736px) {
+  .skill__items::before {
+    background-color: #ff6630;
+    content: "";
+    height: 60px;
+    margin: 0 auto;
+    position: absolute;
+    top: 400px;
+    left: 13%;
+    width: 513px;
+  }
+  
+  .skill__items::after {
+    background-color: #ff6630;
+    content: "";
+    height: 60px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 90px;
+    left: 13%;
+    width: 513px;
+  }  
+
+  .portfolio__imgWrapper {
+    margin: 0 0 0 20px;
+    max-width: 370px;
+    position: relative;
+    width: 100%;
+  }
+
+  .portfolio__item:nth-child(even) .portfolio__imgWrapper {
+    margin: 0 20px 0 0 ;
+    max-width: 370px;
+    position: relative;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  .skill__items::before {
+    background-color: #ff6630;
+    content: "";
+    height: 60px;
+    margin: 0 auto;
+    position: absolute;
+    top: 400px;
+    left: 9%;
+    width: 513px;
+  }
+  
+  .skill__items::after {
+    background-color: #ff6630;
+    content: "";
+    height: 60px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 90px;
+    left: 9%;
+    width: 513px;
+  }  
+}
+
+@media screen and (max-width: 414px) {
+  .sp__only {
+    display: block;
+  }
+
+  .mv__cardWrapper::before {
+    background-color: #ff6630;
+    content: "";
+    height: 400px;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: 290px;
+    z-index: 1;
+  }
+
+  .mv__cardWrapper::after {
+    content: "";
+    background-image: url(../img/Humaaans\ -\ Standing.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 200px;
+    right: -70px;
+    z-index: 2;
+    height: 210px;
+    width: 130px;
+    transform: scale(-1,1);
+  }
+
+  .mv__card::before {
+    content: "Welcome to";
+    color: #216045;
+    font-family: 'Playfair Display', serif;
+    font-size: 63px;
+    line-height: 1.3;
+    margin: 0 200px 0 -230px;
+    text-align: left;
+    position: absolute;
+    top: 13%;
+    left: 175px;
+    text-align: center;
+    width: 400px;
+    z-index: 3;
+  }
+  
+  .mv__card::after {
+    content: "my portfolio";
+    color: #216045;
+    font-family: 'Playfair Display', serif;
+    font-size: 63px;
+    line-height: 1.3;
+    margin: 0 200px 0 -230px;
+    text-align: left;
+    position: absolute;
+    top: 27%;
+    left: 175px;
+    text-align: center;
+    width: 400px;
+    z-index: 3;
+  }
+
+  .about__head::before {
+    content: "";
+    border-radius: 50%;
+    background-color: #ff6630;
+    width: 70px;
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    height: 70px;
+    z-index: 3;
+  }
+  
+  .about__head::after {
+    content: "";
+    border-radius: 50%;
+    border: 1px solid #216045;
+    width: 70px;
+    position: absolute;
+    top: -25px;
+    left: -5px;
+    height: 70px;
+    z-index: 4;
+  }
+  
+  .about__head__imgWrapper {
+    background-color: white;
+    box-shadow: 0 0 13px rgb(197, 197, 197);
+    display: inline-block;
+    margin: 0 0 0 0;
+    padding: 30px 10px 0px 10px;
+    z-index: 2;
+  }
+
+  .about__head__text{
+    color: #ff6630;
+    font-family: 'Oswald', sans-serif; 
+    font-size: 20px;
+    line-height: 1.3;
+    margin: 120px 0 0 -45px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .skill__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 930px;
+    padding: 50px 0 100px;
+    width: 100%;
+  }
+
+  .skill__items::before {
+    display: none;
+  }
+
+  .skill__items::after {
+    background-color: #ff6630;
+    content: "";
+    height: 1200px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 200px;
+    left: 47%;
+    width: 20px;
+  }
+
+  .portfolio__items::after {
+    display: none;
+  }
+  
+  .portfolio__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px 20px; 
+    position: relative;
+  }
+
+  .portfolio__item:nth-child(even) {
+    flex-direction: column
+  }
+
+  .portfolio__imgWrapper {
+    margin: 0;
+    max-width: 340px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .portfolio__item:nth-child(even) .portfolio__imgWrapper {
+    margin: 0;
+    max-width: 340px;
+    position: relative;
+    width: 100%;
+  }
+
+  .portfolio__imgWrapper::after {
+    background-color:  #ff6630;
+    content: "";
+    height: 400px;
+    width: 390px;
+    position: absolute;
+    top: -15px;
+    left: -18px;
+    z-index: 1;
+  }
+  
+  .portfolio__item:nth-child(even) .portfolio__imgWrapper::after {
+    background-color:  #ff6630;
+    content: "";
+    height: 100%;
+    max-height: 400px;
+    width: 390px;
+    position: absolute;
+    top: -15px;
+    left: -18px;
+    z-index: 1;
+  }
+
+  .portfolio__textWrapper {
+    margin: 50px 0 0 0px;
+    max-width: 400px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .portfolio__item:nth-child(even) .portfolio__textWrapper {
+    margin: 50px 0px 0 0; 
+    max-width: 400px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .mv__cardWrapper::before {
+    background-color: #ff6630;
+    content: "";
+    height: 400px;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: 250px;
+    z-index: 1;
+  }
+
+  .mv__card::before {
+    content: "Welcome to";
+    color: #216045;
+    font-family: 'Playfair Display', serif;
+    font-size: 57px;
+    line-height: 1.3;
+    margin: 0 200px 0 -230px;
+    text-align: left;
+    position: absolute;
+    top: 13%;
+    left: 155px;
+    text-align: center;
+    width: 400px;
+    z-index: 3;
+  }
+  
+  .mv__card::after {
+    content: "my portfolio";
+    color: #216045;
+    font-family: 'Playfair Display', serif;
+    font-size: 57px;
+    line-height: 1.3;
+    margin: 0 200px 0 -230px;
+    text-align: left;
+    position: absolute;
+    top: 27%;
+    left: 155px;
+    text-align: center;
+    width: 400px;
+    z-index: 3;
+  }
+
+  .about__head__text{
+    color: #ff6630;
+    font-family: 'Oswald', sans-serif; 
+    font-size: 20px;
+    line-height: 1.3;
+    margin: 65px 0 0 -45px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .portfolio__imgWrapper::after {
+    background-color:  #ff6630;
+    content: "";
+    height: 360px;
+    width: 330px;
+    position: absolute;
+    top: -15px;
+    left: -18px;
+    z-index: 1;
+  }
+  
+  .portfolio__item:nth-child(even) .portfolio__imgWrapper::after {
+    background-color:  #ff6630;
+    content: "";
+    height: 100%;
+    max-height: 360px;
+    width: 330px;
+    position: absolute;
+    top: -15px;
+    left: -18px;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .mv__cardWrapper::before {
+    background-color: #ff6630;
+    content: "";
+    height: 400px;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: 196px;
+    z-index: 1;
+  }
+
+  .mv__card::before {
+    content: "Welcome to";
+    color: #216045;
+    font-family: 'Playfair Display', serif;
+    font-size: 47px;
+    line-height: 1.3;
+    margin: 0 200px 0 -230px;
+    text-align: left;
+    position: absolute;
+    top: 16%;
+    left: 130px;
+    text-align: center;
+    width: 400px;
+    z-index: 3;
+  }
+  
+  .mv__card::after {
+    content: "my portfolio";
+    color: #216045;
+    font-family: 'Playfair Display', serif;
+    font-size: 47px;
+    line-height: 1.3;
+    margin: 0 200px 0 -230px;
+    text-align: left;
+    position: absolute;
+    top: 30%;
+    left: 130px;
+    text-align: center;
+    width: 400px;
+    z-index: 3;
+  }
+
+  .about__head__text{
+    color: #ff6630;
+    font-family: 'Oswald', sans-serif; 
+    font-size: 17px;
+    line-height: 1.3;
+    margin: 63px 0 0 -45px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .about__head__sns {
+    width: 100px;
+    margin: 15px 0 0 -93px;
+  }  
+
+  .about__head__sns a {
+    color: #ffc730;
+    font-size: 25px;
+    position: relative;
+    z-index: 3;
+  }
+  
+  .portfolio__imgWrapper::after {
+    background-color:  #ff6630;
+    content: "";
+    height: 300px;
+    width: 276px;
+    position: absolute;
+    top: -15px;
+    left: -18px;
+    z-index: 1;
+  }
+  
+  .portfolio__item:nth-child(even) .portfolio__imgWrapper::after {
+    background-color:  #ff6630;
+    content: "";
+    height: 100%;
+    max-height: 300px;
+    width: 276px;
+    position: absolute;
+    top: -15px;
+    left: -18px;
+    z-index: 1;
+  }
+}
