@@ -65,6 +65,10 @@ input, button, a {
   color: #2db393;
 }
 
+.pc__only {
+  display: block;
+}
+
 .sp_only {
   display: none;
 }
@@ -113,6 +117,11 @@ input, button, a {
   background-color: #f7f0de;
 }
 
+.mv__wrapper {
+  margin: 0 auto;
+  padding: 0 70px;
+}
+
 .mv__container {
   margin: 0 auto 20px;
   padding: 0 40px 70px;
@@ -135,25 +144,26 @@ input, button, a {
   background-color: #ff6630;
   content: "";
   height: 400px;
+  max-width: 600px;
   position: absolute;
   top: -30px;
   left: -30px;
-  width: 600px;
+  width: 100%;
   z-index: 1;
 }
 
 .mv__cardWrapper::after {
-  content: "";
   background-image: url(../img/Humaaans\ -\ Standing.png);
   background-size: contain;
   background-repeat: no-repeat;
+  content: "";
   position: absolute;
   top: 50px;
   right: -135px;
-  z-index: 2;
   height: 350px;
-  width: 270px;
   transform: scale(-1,1);
+  width: 270px;
+  z-index: 2;
 }
 
 .mv__card {
@@ -196,13 +206,12 @@ input, button, a {
   font-family: 'Playfair Display', serif;
   font-size: 70px;
   line-height: 1.3;
-  margin: 0 200px 0 -230px;
-  text-align: left;
   position: absolute;
   top: 30%;
-  left: 90px;
+  left: -100px;
+  text-align: left;
   width: 400px;
-  z-index: 3;
+  z-index: 5;
 }
 
 .mv__card::after {
@@ -211,13 +220,12 @@ input, button, a {
   font-family: 'Playfair Display', serif;
   font-size: 70px;
   line-height: 1.3;
-  margin: 0 200px 0 -230px;
-  text-align: left;
   position: absolute;
   top: 50%;
-  left: 90px;
+  left: -100px;
+  text-align: left;
   width: 400px;
-  z-index: 3;
+  z-index: 5;
 }
 
 
@@ -233,7 +241,7 @@ input, button, a {
 .about__head {
   display: flex;
   margin: 0 auto;
-  max-width: 500px;
+  max-width: 420px;
   position: relative;
   width: 100%;
 }
@@ -245,7 +253,7 @@ input, button, a {
   width: 70px;
   position: absolute;
   top: -20px;
-  left: 65px;
+  left: -20px;
   height: 70px;
   z-index: 3;
 }
@@ -257,7 +265,7 @@ input, button, a {
   width: 70px;
   position: absolute;
   top: -25px;
-  left: 60px;
+  left: -25px;
   height: 70px;
   z-index: 4;
 }
@@ -266,8 +274,8 @@ input, button, a {
   background-color: white;
   box-shadow: 0 0 13px rgb(197, 197, 197);
   display: inline-block;
-  margin: 0 0 0 90px;
   padding: 30px 10px 0px 10px;
+  position: relative;
   z-index: 2;
 }
 
@@ -284,22 +292,28 @@ input, button, a {
   text-align: center;
 }
 
+.about__head__textWrapper {
+  margin: 150px 0 0 -40px;
+}
+
 .about__head__text{
   color: #ff6630;
   font-family: 'Oswald', sans-serif; 
   font-size: 20px;
   line-height: 1.3;
-  margin: 150px 0 0 -45px;
   position: relative;
   z-index: 2;
 }
 
-.about__head__sns {
-  width: 100px;
-  margin: 15px 0 0 -110px;
+.about__head__snsWrapper {
+  content: "";
+  position: absolute;
+  bottom: 70px;
+  right: 15px;
+
 }
 
-.about__head__sns a {
+.about__head__snsWrapper a {
   color: #ffc730;
   font-size: 30px;
   position: relative;
@@ -331,6 +345,10 @@ input, button, a {
   background-color: #f7f0de;
 }
 
+.skill__wrapper {
+  padding: 0 40px;
+}
+
 .skill__container {
   position: relative;
   width: 100%;
@@ -338,8 +356,7 @@ input, button, a {
 
 .skill__items {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0 auto;
   max-width: 930px;
   padding: 50px 0 100px;
@@ -360,9 +377,8 @@ input, button, a {
 .skill__item {
   background-color: white;
   border: 2px solid black;
-  height: 360px;
   max-width: 220px;
-  margin: 20px 0;
+  margin: 20px 5px;
   padding: 30px 20px;
   position: relative;
   text-align: center;
@@ -401,13 +417,13 @@ input, button, a {
 .portfolio__items {
   display: flex;
   flex-direction: column;
-  padding: 50px 0 50px
+  padding: 50px 20px 50px
 }
 
 .portfolio__items::after {
   background-color: rgb(219, 218, 218);
   content: "";
-  height: 1400px;
+  height: 1900px;
   position: absolute;
   top: 250px;
   left: 50%;
@@ -416,24 +432,31 @@ input, button, a {
 
 .portfolio__item {
   display: flex;
-  justify-content: center;
-  margin: 40px 0; 
+  justify-content: space-between;
+  margin: 40px 0 40px 160px; 
+  max-width: 800px;
   position: relative;
+  width: 100%;
 }
 
 .portfolio__item:nth-child(even) {
   flex-direction: row-reverse;
+  margin: 40px 160px 40px 0; 
 }
 
 .portfolio__imgWrapper {
-  margin: 0 0 0 160px;
+  height: 100%;
+  margin: 0 30px 0 0;
+  max-height: 430px;
   max-width: 370px;
   position: relative;
   width: 100%;
 }
 
 .portfolio__item:nth-child(even) .portfolio__imgWrapper {
-  margin: 0 160px 0 0 ;
+  height: 100%;
+  margin: 0 0 0 30px;
+  max-height: 430px;
   max-width: 370px;
   position: relative;
   width: 100%;
@@ -442,7 +465,8 @@ input, button, a {
 .portfolio__imgWrapper::after {
   background-color:  #ff6630;
   content: "";
-  height: 430px;
+  height: 100%;
+  max-height: 430px;
   max-width: 370px;
   position: absolute;
   top: -20px;
@@ -495,7 +519,7 @@ input, button, a {
 }
 
 .portfolio__textWrapper {
-  margin: 80px 0 0 40px;
+  margin: 0;
   max-width: 400px;
   position: relative;
   text-align: center;
@@ -503,7 +527,7 @@ input, button, a {
 }
 
 .portfolio__item:nth-child(even) .portfolio__textWrapper {
-  margin: 80px 40px 0 0; 
+  margin: 0; 
   max-width: 400px;
   text-align: center;
   width: 100%;
@@ -606,615 +630,28 @@ footer {
   font-size: 40px;
 }
 
-/* PCなめらか */
-@media screen and (max-width: 940px) {
-  .mv__cardWrapper::after {
-    content: "";
-    background-image: url(../img/Humaaans\ -\ Standing.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 150px;
-    right: 0px;
-    z-index: 2;
-    height: 250px;
-    width: 170px;
-    transform: scale(-1,1);
-  }
-  
-  .mv__card::before {
-    content: "Welcome to";
-    color: #216045;
-    font-family: 'Playfair Display', serif;
-    font-size: 70px;
-    line-height: 1.3;
-    margin: 0 200px 0 -230px;
-    text-align: left;
-    position: absolute;
-    top: 30%;
-    left: 250px;
-    width: 400px;
-    z-index: 3;
-  }
-  
-  .mv__card::after {
-    content: "my portfolio";
-    color: #216045;
-    font-family: 'Playfair Display', serif;
-    font-size: 70px;
-    line-height: 1.3;
-    margin: 0 200px 0 -230px;
-    text-align: left;
-    position: absolute;
-    top: 50%;
-    left: 250px;
-    width: 400px;
-    z-index: 3;
-  }
-  
-  .skill__items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 auto;
-    max-width: 450px;
-    padding: 50px 0 100px;
-    width: 100%;
-  }
 
-  .skill__items::before {
-    background-color: #ff6630;
-    content: "";
-    height: 60px;
-    margin: 0 auto;
-    position: absolute;
-    top: 400px;
-    left: 21%;
-    width: 513px;
-  }
-  
-  .skill__items::after {
-    background-color: #ff6630;
-    content: "";
-    height: 60px;
-    margin: 0 auto;
-    position: absolute;
-    bottom: 90px;
-    left: 21%;
-    width: 513px;
-  }  
-
-  .portfolio__imgWrapper::after {
-    background-color:  #ff6630;
-    content: "";
-    max-height: 327px;
-    max-width: 370px;
-    position: absolute;
-    top: -20px;
-    left: -20px;
-    width: 100%;
-    z-index: 1;
-  }
-  
-  .portfolio__item:nth-child(even) .portfolio__imgWrapper::after {
-    background-color:  #ff6630;
-    content: "";
-    height: 100%;
-    max-height: 327px;
-    max-width: 370px;
-    position: absolute;
-    top: -20px;
-    left: 20px;
-    width: 100%;
-    z-index: 1;
-  }
-  
-  .form__item {
-    display: flex;
-    flex-direction: column;
-    font-size: 14px;
-    font-weight: bold;
-    margin: 0 auto 0px;
-  }
-
-.form__item input,
-.form__item textarea {
-  background-color: white;
-  border: none;
-  height: 56px;
-  max-width: 800px;
-  width: 100%;
-  }
-}
-
-/* iPad */
-@media screen and (max-width: 768px) {
-  .sp__only {
-    display: none;
-  }
-
-  .skill__items::before {
-    background-color: #ff6630;
-    content: "";
-    height: 60px;
-    margin: 0 auto;
-    position: absolute;
-    top: 400px;
-    left: 14.5%;
-    width: 513px;
-  }
-  
-  .skill__items::after {
-    background-color: #ff6630;
-    content: "";
-    height: 60px;
-    margin: 0 auto;
-    position: absolute;
-    bottom: 90px;
-    left: 14.5%;
-    width: 513px;
-  }  
-
-  .portfolio__item {
-    display: flex;
-    justify-content: center;
-    margin: 40px 0; 
-    position: relative;
-
-    height: 386px;
-  }
-
-  .portfolio__textWrapper {
-    margin: 0px 0 0 40px;
-    max-width: 400px;
-    position: relative;
-    text-align: center;
-    width: 100%;
-  }
-  
-  .portfolio__item:nth-child(even) .portfolio__textWrapper {
-    margin: 0px 40px 0 0; 
-    max-width: 400px;
-    text-align: center;
-    width: 100%;
-  }
-  
-}
-
-/* iphone plus 横 */
-@media screen and (max-width: 736px) {
-  .mv__cardWrapper {
-    display: flex;
-    font-family: 'Oswald', sans-serif;
-    height: 400px;
-    justify-content: space-between;
-    max-width: 600px;
-    margin: 0 auto;  
-    position: relative;
-    width: 100%;
-    z-index: 4;
-
-    height: 280px;
-  }
-  
-  .mv__cardWrapper::before {
-    background-color: #ff6630;
-    content: "";
-    height: 400px;
-    position: absolute;
-    top: -30px;
-    left: -30px;
-    width: 600px;
-    z-index: 1;
-
-    height: 280px;
-  }
-
-  .mv__cardWrapper::after {
-    content: "";
-    background-image: url(../img/Humaaans\ -\ Standing.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 90px;
-    right: -50px;
-    z-index: 2;
-    height: 200px;
-    width: 120px;
-    transform: scale(-1,1);
-  }  
-
-  .mv__card::before {
-    content: "Welcome to";
-    color: #216045;
-    font-family: 'Playfair Display', serif;
-    font-size: 60px;
-    line-height: 1.3;
-    margin: 0 200px 0 -230px;
-    position: absolute;
-    text-align: center;
-    top: 25%;
-    left: 330px;
-    width: 400px;
-    z-index: 3;
-  }
-  
-  .mv__card::after {
-    content: "my portfolio";
-    color: #216045;
-    font-family: 'Playfair Display', serif;
-    font-size: 60px;
-    line-height: 1.3;
-    margin: 0 200px 0 -230px;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    left: 330px;
-    width: 400px;
-    z-index: 3;
-  }
-  
-  .skill__items::before {
-    background-color: #ff6630;
-    content: "";
-    height: 60px;
-    margin: 0 auto;
-    position: absolute;
-    top: 400px;
-    left: 13%;
-    width: 513px;
-  }
-  
-  .skill__items::after {
-    background-color: #ff6630;
-    content: "";
-    height: 60px;
-    margin: 0 auto;
-    position: absolute;
-    bottom: 90px;
-    left: 13%;
-    width: 513px;
-  }  
-
+@media screen and (max-width: 1000px) {
   .portfolio__items::after {
     display: none;
   }
-
+  
   .portfolio__item {
     display: flex;
-    justify-content: center;
-    margin: 40px 0; 
-    position: relative;
-    height: auto;
-  }
-
-  .portfolio__imgWrapper {
-    margin: 0 0 0 20px;
-    max-width: 370px;
-    position: relative;
-    width: 100%;
-  }
-
-  .portfolio__item:nth-child(even) .portfolio__imgWrapper {
-    margin: 0 20px 0 0 ;
-    max-width: 370px;
-    position: relative;
-    width: 100%;
-  }
-}
-
-/*iphone 6/7/8 横 */
-@media screen and (max-width: 667px) {
-  .mv__cardWrapper {
-    display: flex;
-    font-family: 'Oswald', sans-serif;
-    height: 400px;
     justify-content: space-between;
-    max-width: 600px;
-    margin: 0 auto;  
+    margin: 40px auto; 
+    max-width: 800px;
     position: relative;
     width: 100%;
-    z-index: 4;
-
-    height: 240px;
   }
   
-  .mv__cardWrapper::before {
-    background-color: #ff6630;
-    content: "";
-    height: 400px;
-    position: absolute;
-    top: -30px;
-    left: -30px;
-    width: 543px;
-    z-index: 1;
-
-    height: 240px;
-  }
-
-  .mv__cardWrapper::after {
-    content: "";
-    background-image: url(../img/Humaaans\ -\ Standing.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 85px;
-    right: -30px;
-    z-index: 2;
-    height: 180px;
-    width: 100px;
-    transform: scale(-1,1);
-  }  
-
-  .mv__card::before {
-    content: "Welcome to";
-    color: #216045;
-    font-family: 'Playfair Display', serif;
-    font-size: 50px;
-    line-height: 1.3;
-    margin: 0 200px 0 -230px;
-    position: absolute;
-    text-align: center;
-    top: 25%;
-    left: 300px;
-    width: 400px;
-    z-index: 3;
-  }
-  
-  .mv__card::after {
-    content: "my portfolio";
-    color: #216045;
-    font-family: 'Playfair Display', serif;
-    font-size: 50px;
-    line-height: 1.3;
-    margin: 0 200px 0 -230px;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    left: 300px;
-    width: 400px;
-    z-index: 3;
-  }
-
-  .skill__items::before {
-    background-color: #ff6630;
-    content: "";
-    height: 60px;
-    margin: 0 auto;
-    position: absolute;
-    top: 400px;
-    left: 9%;
-    width: 513px;
-  }
-  
-  .skill__items::after {
-    background-color: #ff6630;
-    content: "";
-    height: 60px;
-    margin: 0 auto;
-    position: absolute;
-    bottom: 90px;
-    left: 9%;
-    width: 513px;
+  .portfolio__item:nth-child(even) {
+    flex-direction: row-reverse;
+    margin: 40px auto; 
   }  
 }
 
-/* iphone5 SE 横 */
-@media screen and (max-width: 568px) {
-  .mv__cardWrapper {
-    display: flex;
-    font-family: 'Oswald', sans-serif;
-    height: 400px;
-    justify-content: space-between;
-    max-width: 600px;
-    margin: 0 auto;  
-    position: relative;
-    width: 100%;
-    z-index: 4;
-
-    height: 190px;
-  }
-  
-  .mv__cardWrapper::before {
-    background-color: #ff6630;
-    content: "";
-    height: 400px;
-    position: absolute;
-    top: -20px;
-    left: -20px;
-    width: 444px;
-    z-index: 1;
-
-    height: 190px;
-  }
-
-  .mv__cardWrapper::after {
-    content: "";
-    background-image: url(../img/Humaaans\ -\ Standing.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 80px;
-    right: -30px;
-    z-index: 2;
-    height: 170px;
-    width: 70px;
-    transform: scale(-1,1);
-  }  
-
-  .mv__card::before {
-    content: "Welcome to";
-    color: #216045;
-    font-family: 'Playfair Display', serif;
-    font-size: 50px;
-    line-height: 1.3;
-    margin: 0 200px 0 -230px;
-    position: absolute;
-    text-align: center;
-    top: 25%;
-    left: 260px;
-    width: 400px;
-    z-index: 3;
-  }
-  
-  .mv__card::after {
-    content: "my portfolio";
-    color: #216045;
-    font-family: 'Playfair Display', serif;
-    font-size: 50px;
-    line-height: 1.3;
-    margin: 0 200px 0 -230px;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    left: 260px;
-    width: 400px;
-    z-index: 3;
-  }
-
-  .skill__items::before {
-    background-color: #ff6630;
-    content: "";
-    height: 60px;
-    margin: 0 auto;
-    position: absolute;
-    top: 400px;
-    left: 1.5%;
-    width: 513px;
-  }
-  
-  .skill__items::after {
-    background-color: #ff6630;
-    content: "";
-    height: 60px;
-    margin: 0 auto;
-    position: absolute;
-    bottom: 90px;
-    left: 1.5%;
-    width: 513px;
-  }  
-}
-
-/* iphone plus 縦 */
-@media screen and (max-width: 414px) {
-  .sp__only {
-    display: block;
-  }
-
-  .mv__cardWrapper {
-    display: flex;
-    font-family: 'Oswald', sans-serif;
-    height: 400px;
-    justify-content: space-between;
-    max-width: 600px;
-    margin: 0 auto;  
-    position: relative;
-    width: 100%;
-    z-index: 4;
-
-    height: 550px;
-  }
-  
-  .mv__cardWrapper::before {
-    background-color: #ff6630;
-    content: "";
-    height: 550px;
-    position: absolute;
-    top: -30px;
-    left: -30px;
-    width: 290px;
-    z-index: 1;
-  }
-
-  .mv__cardWrapper::after {
-    content: "";
-    background-image: url(../img/Humaaans\ -\ Standing.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 360px;
-    right: -60px;
-    z-index: 2;
-    height: 250px;
-    width: 170px;
-    transform: scale(-1,1);
-  }
-
-  .mv__card::before {
-    content: "Welcome to";
-    color: #216045;
-    font-family: 'Playfair Display', serif;
-    font-size: 63px;
-    line-height: 1.3;
-    margin: 0 200px 0 -230px;
-    text-align: left;
-    position: absolute;
-    top: 19%;
-    left: 175px;
-    text-align: center;
-    width: 400px;
-    z-index: 3;
-  }
-  
-  .mv__card::after {
-    content: "my portfolio";
-    color: #216045;
-    font-family: 'Playfair Display', serif;
-    font-size: 63px;
-    line-height: 1.3;
-    margin: 0 200px 0 -230px;
-    text-align: left;
-    position: absolute;
-    top: 33%;
-    left: 175px;
-    text-align: center;
-    width: 400px;
-    z-index: 3;
-  }
-
-  .about__head::before {
-    content: "";
-    border-radius: 50%;
-    background-color: #ff6630;
-    width: 70px;
-    position: absolute;
-    top: -20px;
-    left: 0px;
-    height: 70px;
-    z-index: 3;
-  }
-  
-  .about__head::after {
-    content: "";
-    border-radius: 50%;
-    border: 1px solid #216045;
-    width: 70px;
-    position: absolute;
-    top: -25px;
-    left: -5px;
-    height: 70px;
-    z-index: 4;
-  }
-  
-  .about__head__imgWrapper {
-    background-color: white;
-    box-shadow: 0 0 13px rgb(197, 197, 197);
-    display: inline-block;
-    margin: 0 0 0 0;
-    padding: 30px 10px 0px 10px;
-    z-index: 2;
-  }
-
-  .about__head__text{
-    color: #ff6630;
-    font-family: 'Oswald', sans-serif; 
-    font-size: 20px;
-    line-height: 1.3;
-    margin: 120px 0 0 -45px;
-    position: relative;
-    z-index: 2;
-  }
-  
+@media screen and (max-width: 800px) {  
   .skill__items {
     display: flex;
     flex-wrap: wrap;
@@ -1226,71 +663,154 @@ footer {
   }
 
   .skill__items::before {
-    display: none;
-  }
-
-  .skill__items::after {
     background-color: #ff6630;
     content: "";
-    height: 1200px;
+    height: 60px;
     margin: 0 auto;
     position: absolute;
-    bottom: 200px;
-    left: 47%;
-    width: 20px;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }  
+
+  .skill__item {
+    background-color: white;
+    border: 2px solid black;
+    max-width: 40%;
+    margin: 20px 5px;
+    padding: 30px 20px;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+  }
+  
+  .form__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 auto 20px;
+  }
+
+  .form__item label {
+    padding: 0px 0 10px;
+  }  
+
+  .form__item input,
+  .form__item textarea {
+    background-color: white;
+    border: none;
+    height: 56px;
+    margin: 0 auto;
+    max-width: 600px;
+    width: 100%;
+  }
+
+  .form__item textarea {
+    height: 156px;
+    margin: 0 auto 56px auto;
+    resize: none;
+  } 
+}
+
+@media screen and (max-width: 590px) {
+  .mv__wrapper {
+    padding: 0 0 0 20px;
+  }
+
+  .mv__cardWrapper::before {
+    background-color: #ff6630;
+    content: "";
+    height: 400px;
+    max-width: 600px;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 100%;
+    z-index: 1;
+  }
+    
+  .mv__cardWrapper::after {
+    background-image: url(../img/Humaaans\ -\ Standing.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: "";
+    height: 170px;
+    position: absolute;
+    top: 290px;
+    right: 0;
+    transform: scale(-1,1);
+    width: 90px;
+    z-index: 2;
+  }  
+
+  .mv__card::before {
+    content: "Welcome to";
+    color: #216045;
+    font-family: 'Playfair Display', serif;
+    font-size: 70px;
+    line-height: 1.3;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 400px;
+    z-index: 5;
+  }
+  
+  .mv__card::after {
+    content: "my portfolio";
+    color: #216045;
+    font-family: 'Playfair Display', serif;
+    font-size: 70px;
+    line-height: 1.3;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 400px;
+    z-index: 5;
   }
 
   .portfolio__item {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 40px 20px; 
+    margin: 40px auto; 
+    max-width: 800px;
     position: relative;
+    width: 100%;
   }
-
+  
   .portfolio__item:nth-child(even) {
-    flex-direction: column
+    flex-direction: column;
+    margin: 40px auto; 
   }
 
   .portfolio__imgWrapper {
-    margin: 0;
-    max-width: 340px;
+    height: 100%;
+    margin: 0 auto;
+    max-height: 430px;
+    max-width: 370px;
     position: relative;
     width: 100%;
   }
   
   .portfolio__item:nth-child(even) .portfolio__imgWrapper {
-    margin: 0;
-    max-width: 340px;
+    height: 100%;
+    margin: 0 auto;
+    max-height: 430px;
+    max-width: 370px;
     position: relative;
     width: 100%;
   }
 
-  .portfolio__imgWrapper::after {
-    background-color:  #ff6630;
-    content: "";
-    height: 400px;
-    width: 390px;
-    position: absolute;
-    top: -15px;
-    left: -18px;
-    z-index: 1;
-  }
-  
-  .portfolio__item:nth-child(even) .portfolio__imgWrapper::after {
-    background-color:  #ff6630;
-    content: "";
-    height: 100%;
-    max-height: 400px;
-    width: 390px;
-    position: absolute;
-    top: -15px;
-    left: -18px;
-    z-index: 1;
-  }
-
   .portfolio__textWrapper {
-    margin: 50px 0 0 0px;
+    margin: 30px auto 0;
     max-width: 400px;
     position: relative;
     text-align: center;
@@ -1298,82 +818,59 @@ footer {
   }
   
   .portfolio__item:nth-child(even) .portfolio__textWrapper {
-    margin: 50px 0px 0 0; 
+    margin: 30px auto 0;
     max-width: 400px;
     text-align: center;
     width: 100%;
   }
 }
 
-/* iphone6/7/8 縦 */
-@media screen and (max-width: 375px) {
-  .mv__cardWrapper {
-    display: flex;
-    font-family: 'Oswald', sans-serif;
-    height: 470px;
-    justify-content: space-between;
-    max-width: 600px;
-    margin: 0 auto;  
-    position: relative;
-    width: 100%;
-    z-index: 4;
-  }
-  
-  .mv__cardWrapper::before {
+@media screen and (max-width: 550px) {
+  .skill__items::before {
+    display: none;
+  }  
+
+  .skill__items::after {
     background-color: #ff6630;
     content: "";
-    height: 470px;
+    height: 1330px;
+    margin: 0 auto;
     position: absolute;
-    top: -30px;
-    left: -30px;
-    width: 250px;
-    z-index: 1;
-  }
-
-  .mv__cardWrapper::after {
-    content: "";
-    background-image: url(../img/Humaaans\ -\ Standing.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 345px;
-    right: -60px;
-    z-index: 2;
-    height: 210px;
-    width: 130px;
-    transform: scale(-1,1);
-  }
-
-  .mv__card::before {
-    content: "Welcome to";
-    color: #216045;
-    font-family: 'Playfair Display', serif;
-    font-size: 57px;
-    line-height: 1.3;
-    margin: 0 200px 0 -230px;
-    text-align: left;
-    position: absolute;
-    top: 15%;
-    left: 155px;
-    text-align: center;
-    width: 400px;
-    z-index: 3;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10%;
   }
   
-  .mv__card::after {
-    content: "my portfolio";
-    color: #216045;
-    font-family: 'Playfair Display', serif;
-    font-size: 57px;
-    line-height: 1.3;
-    margin: 0 200px 0 -230px;
-    text-align: left;
-    position: absolute;
-    top: 30%;
-    left: 155px;
+
+  .skill__item {
+    background-color: white;
+    border: 2px solid black;
+    max-width: 90%;
+    margin: 20px 5px;
+    padding: 30px 20px;
+    position: relative;
     text-align: center;
-    width: 400px;
-    z-index: 3;
+    z-index: 2;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .pc__only {
+    display: none;
+  }
+
+  .about__head {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 320px;
+    position: relative;
+    width: 100%;
+  }  
+
+  .about__head__textWrapper {
+    margin: 30px auto 0;
   }
 
   .about__head__text{
@@ -1381,147 +878,49 @@ footer {
     font-family: 'Oswald', sans-serif; 
     font-size: 20px;
     line-height: 1.3;
-    margin: 65px 0 0 -45px;
     position: relative;
+    text-align: center;
     z-index: 2;
-  }
-
-  .portfolio__imgWrapper::after {
-    background-color:  #ff6630;
-    content: "";
-    height: 360px;
-    width: 330px;
-    position: absolute;
-    top: -15px;
-    left: -18px;
-    z-index: 1;
-  }
-  
-  .portfolio__item:nth-child(even) .portfolio__imgWrapper::after {
-    background-color:  #ff6630;
-    content: "";
-    height: 100%;
-    max-height: 360px;
-    width: 330px;
-    position: absolute;
-    top: -15px;
-    left: -18px;
-    z-index: 1;
-  }
+  } 
 }
 
-@media screen and (max-width: 320px) {
-  .mv__cardWrapper {
-    display: flex;
-    font-family: 'Oswald', sans-serif;
-    height: 400px;
-    justify-content: space-between;
-    max-width: 600px;
-    margin: 0 auto;  
-    position: relative;
-    width: 100%;
-    z-index: 4;
-  }
-  
-  .mv__cardWrapper::before {
-    background-color: #ff6630;
-    content: "";
-    height: 400px;
-    position: absolute;
-    top: -30px;
-    left: -30px;
-    width: 196px;
-    z-index: 1;
-  }
-
-  .mv__cardWrapper::after {
-    content: "";
-    background-image: url(../img/Humaaans\ -\ Standing.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 275px;
-    right: -60px;
-    z-index: 2;
-    height: 190px;
-    width: 110px;
-    transform: scale(-1,1);
-  }
-
+@media screen and (max-width: 420px) {
   .mv__card::before {
     content: "Welcome to";
     color: #216045;
     font-family: 'Playfair Display', serif;
-    font-size: 47px;
+    font-size: 45px;
     line-height: 1.3;
-    margin: 0 200px 0 -230px;
-    text-align: left;
     position: absolute;
-    top: 16%;
-    left: 130px;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     width: 400px;
-    z-index: 3;
+    z-index: 5;
   }
   
   .mv__card::after {
     content: "my portfolio";
     color: #216045;
     font-family: 'Playfair Display', serif;
-    font-size: 47px;
+    font-size: 45px;
     line-height: 1.3;
-    margin: 0 200px 0 -230px;
-    text-align: left;
     position: absolute;
-    top: 30%;
-    left: 130px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     width: 400px;
-    z-index: 3;
+    z-index: 5;
   }
+}
 
-  .about__head__text{
-    color: #ff6630;
-    font-family: 'Oswald', sans-serif; 
-    font-size: 17px;
-    line-height: 1.3;
-    margin: 63px 0 0 -45px;
-    position: relative;
-    z-index: 2;
-  }
-
-  .about__head__sns {
-    width: 100px;
-    margin: 15px 0 0 -93px;
-  }  
-
-  .about__head__sns a {
-    color: #ffc730;
+@media screen and (max-width: 390px) {
+  .about__head__imgWrapper h2 {
+    font-family: 'Caveat', cursive;
     font-size: 25px;
-    position: relative;
-    z-index: 3;
-  }
-  
-  .portfolio__imgWrapper::after {
-    background-color:  #ff6630;
-    content: "";
-    height: 300px;
-    width: 276px;
-    position: absolute;
-    top: -15px;
-    left: -18px;
-    z-index: 1;
-  }
-  
-  .portfolio__item:nth-child(even) .portfolio__imgWrapper::after {
-    background-color:  #ff6630;
-    content: "";
-    height: 100%;
-    max-height: 300px;
-    width: 276px;
-    position: absolute;
-    top: -15px;
-    left: -18px;
-    z-index: 1;
-  }
+    padding: 15px 10px;
+    text-align: center;
+  }  
 }
