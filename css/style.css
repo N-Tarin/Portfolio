@@ -563,6 +563,12 @@ input, button, a {
   padding: 0 0 100px 0;
 }
 
+.contact__container {
+  max-width: 600px;
+  margin: 50px auto 0;
+  width: 100%;
+}
+
 .form {
   margin: 0 auto;
   max-width: 785px;
@@ -598,10 +604,8 @@ input, button, a {
 .form__item textarea {
   background-color: white;
   border: none;
-  border-radius: 15px;
   box-shadow: 0 0 0 999px #fff inset;
   height: 56px;
-  margin: 0 auto 0 0;
   max-width: 600px;
   width: 100%;
 }
@@ -615,8 +619,6 @@ input, button, a {
 .mw_wp_form #submit-button input {
   background-color: #0739cc;
   border: 3px solid #0739cc;
-  border-radius: 20px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
   color: white;
   cursor: pointer;
   display: block;
@@ -630,9 +632,10 @@ input, button, a {
 
 .mw_wp_form #submit-button input:hover {
   background-color: white;
-  border: 2px solid #ffc107;
-  color: #ffc107;
+  border: 2px solid #0739cc;
+  color: #0739cc;
 }
+
 
 /* footer */
 footer {

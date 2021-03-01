@@ -324,7 +324,7 @@
             DMでもお待ちしております！
           </p><!-- /.lead -->
         </div><!-- /.titleContainer -->
-        <div class="container">
+        <div class="container contact__container">
           <?php echo do_shortcode('[mwform_formkey key="5"]'); ?>
         </div><!-- /.container -->
       </div><!-- /.wrapper -->
