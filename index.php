@@ -1,9 +1,5 @@
 <?php get_header(); ?>
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 17ebaa51ed93232ba6701698bd68ea6caca7a91e
     <section class="mv">
       <div class="wrapper mv__wrapper">
         <div class="container mv__container">
@@ -329,41 +325,9 @@
           </p><!-- /.lead -->
         </div><!-- /.titleContainer -->
         <div class="container">
-  
-          <form action="" class="form">
-  
-            <div class="form__item">
-              <label for="name">お名前</label>
-              <input id="name" type="text">
-            </div><!-- /.form__item -->
-  
-            <div class="form__item">
-              <label for="mail">メールアドレス</label>
-              <input id="mail" type="email">
-            </div><!-- /.form__item -->
-  
-            <div class="form__item">
-              <label for="num">お電話</label>
-              <input id="num" type="number">
-            </div><!-- /.form__item -->
-  
-            <div class="form__item">
-              <label for="text">お問い合わせ内容</label>
-              <textarea  id="text" name="message"></textarea><!-- /# -->
-            </div><!-- /.form__item -->
-  
-            <button class="button form__button -pink">
-              送信する
-            </button><!-- /.button -->
-  
-          </form><!-- /.form -->
-          
+          <?php echo do_shortcode('[mwform_formkey key="5"]'); ?>
         </div><!-- /.container -->
       </div><!-- /.wrapper -->
     </section><!-- /.contact -->
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 17ebaa51ed93232ba6701698bd68ea6caca7a91e
 <?php get_footer(); ?>
