@@ -1,63 +1,5 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/style.css">
+<?php get_header(); ?>
 
-  <!-- ポップなやつ -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-
-  <!-- かっこいいやつ -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-
-  <!-- 手書き風 -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
-  <title>Karin's portfolio</title>
-</head>
-<body>
-  <div class="body">
-
-    <header class="header">
-  
-      <div class="wrapper header__wrapper">
-        <ul class="header__items">
-          <li class="header__item">
-            <a href="#about">
-              About
-              <span>私について</span>
-            </a>
-          </li><!-- /.header__item -->
-          
-          <li class="header__item">
-            <a href="#skills">
-              Skill
-              <span>能力</span>
-            </a>
-          </li><!-- /.header__item -->
-  
-          <li class="header__item">
-            <a href="#portfolio">
-              Portfolio
-              <span>作品</span>
-            </a>
-          </li><!-- /.header__item -->
-  
-          <li class="header__item">
-            <a href="#contact">
-              Contact
-              <span>お問い合わせ</span>
-            </a>
-          </li><!-- /.header__item -->
-  
-        </ul><!-- /.header__items -->
-      </div><!-- /.header__wrapper -->
-    </header><!-- /.header -->
-  
     <section class="mv">
       <div class="wrapper mv__wrapper">
         <div class="container mv__container">
@@ -68,7 +10,7 @@
                 <i class="fas fa-search"></i>
                 <i class="fas fa-list-ul"></i>
               </p><!-- /.mv__card__head -->
-              <img src="./img/Web 1280 – 1@2x.png" alt="">
+              <img src="<?php echo get_template_directory_uri() ?>/img/Web 1280 – 1@2x.png" alt="">
             </div><!-- /.mv__card -->
           </div><!-- /.mv__cardWrapper -->
   
@@ -83,7 +25,7 @@
   
           <div class="about__head">
             <div class="about__head__imgWrapper">
-              <img src="./img/IMG_5339 (1).JPG" alt="">
+              <img src="<?php echo get_template_directory_uri() ?>/img/IMG_5339 (1).JPG" alt="">
               <h2>
                 Nakanishi Karin
               </h2>
@@ -170,7 +112,7 @@
           <ul class="skill__items">
             <li class="skill__item">
               <div class="skill__item__img">
-                <img src="./img/icons8-html-5-128.png" alt="html">
+                <img src="<?php echo get_template_directory_uri() ?>/img/icons8-html-5-128.png" alt="html">
               </div><!-- /.skill__item__img -->
               <div class="skill__item__text">
                 <h3>HTML5</h3>
@@ -182,7 +124,7 @@
   
             <li class="skill__item">
               <div class="skill__item__img">
-                <img src="./img/icons8-css3-128.png" alt="css">
+                <img src="<?php echo get_template_directory_uri() ?>/img/icons8-css3-128.png" alt="css">
               </div><!-- /.skill__item__img -->
               <div class="skill__item__text">
                 <h3>CSS3</h3>
@@ -194,7 +136,7 @@
   
             <li class="skill__item">
               <div class="skill__item__img">
-                <img src="./img/icons8-javascript-128.png" alt="js">
+                <img src="<?php echo get_template_directory_uri() ?>/img/icons8-javascript-128.png" alt="js">
               </div><!-- /.skill__item__img -->
               <div class="skill__item__text">
                 <h3>JavaScript</h3>
@@ -206,7 +148,7 @@
   
             <li class="skill__item">
               <div class="skill__item__img">
-                <img src="./img/icons8-wordpress-128.png" alt="wordpress">
+                <img src="<?php echo get_template_directory_uri() ?>/img/icons8-wordpress-128.png" alt="wordpress">
               </div><!-- /.skill__item__img -->
               <div class="skill__item__text">
                 <h3>WordPress</h3>
@@ -241,7 +183,7 @@
           <li class="portfolio__item">
             <div class="portfolio__imgWrapper">
               <div class="portfolio__img">
-                <img src="./img/becoWrap.png" alt="BecoWrap">
+                <img src="<?php echo get_template_directory_uri() ?>/img/becoWrap.png" alt="BecoWrap">
                 <a href="http://nkrin.com/BecoWrap/">
                   View this site&nbsp;&nbsp;
                 </a>
@@ -269,7 +211,7 @@
           <li class="portfolio__item">
             <div class="portfolio__imgWrapper">
               <div class="portfolio__img">
-                <img src="./img/coyas.png" alt="coyas">
+                <img src="<?php echo get_template_directory_uri() ?>/img/coyas.png" alt="coyas">
                 <a href="https://n-tarin.github.io/Coya-s/">
                   View this site&nbsp;&nbsp;
                 </a>
@@ -297,7 +239,7 @@
           <li class="portfolio__item">
             <div class="portfolio__imgWrapper">
               <div class="portfolio__img">
-                <img src="./img/calendar.png" alt="calendarapp">
+                <img src="<?php echo get_template_directory_uri() ?>/img/calendar.png" alt="calendarapp">
                 <a href="https://n-tarin.github.io/Calendar-app/">
                   View this site&nbsp;&nbsp;
                 </a>
@@ -323,7 +265,7 @@
           <li class="portfolio__item">
             <div class="portfolio__imgWrapper">
               <div class="portfolio__img">
-                <img src="./img/todo.png" alt="todoapp">
+                <img src="<?php echo get_template_directory_uri() ?>/img/todo.png" alt="todoapp">
                 <a href="https://n-tarin.github.io/To-do-app-Vue.js/">
                   View this site&nbsp;&nbsp;
                 </a>
@@ -416,23 +358,4 @@
       </div><!-- /.wrapper -->
     </section><!-- /.contact -->
 
-    <footer>
-      <div class="footer__text">
-        <a href="https://note.com/nakanuxxx">
-          <i class="-note far fa-file"></i>
-        </a>
-        <a href="https://twitter.com/nakanuxxx">
-          <i class="-twitter fab fa-twitter-square"></i>
-        </a>
-        <a href="https://github.com/N-Tarin">
-          <i class="-github fab fa-github-square"></i>
-        </a>
-      </div><!-- /.footer__text -->
-    </footer>
-  </div><!-- /.body -->
-
-  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-  <script src="./js/main.js"></script>
-  <script src="https://kit.fontawesome.com/59f9f0717a.js" crossorigin="anonymous"></script>
-</body>
-</html>
+<?php get_footer(); ?>
