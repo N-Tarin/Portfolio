@@ -1,6 +1,9 @@
 <?php get_header(); ?>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 17ebaa51ed93232ba6701698bd68ea6caca7a91e
     <section class="mv">
       <div class="wrapper mv__wrapper">
         <div class="container mv__container">
@@ -359,5 +362,8 @@
       </div><!-- /.wrapper -->
     </section><!-- /.contact -->
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 17ebaa51ed93232ba6701698bd68ea6caca7a91e
 <?php get_footer(); ?>

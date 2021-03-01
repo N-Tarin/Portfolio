@@ -35,6 +35,7 @@
           </li><!-- /.header__item -->
   
           <li class="header__item">
+<<<<<<< HEAD
             <?php
               wp_nav_menu(
               //.header-listを置き換えて、PC用メニューを動的に表示する
@@ -46,6 +47,12 @@
               )
               );
             ?>
+=======
+            <a href="#contact">
+              Contact
+              <span>お問い合わせ</span>
+            </a>
+>>>>>>> 17ebaa51ed93232ba6701698bd68ea6caca7a91e
           </li><!-- /.header__item -->
   
         </ul><!-- /.header__items -->
