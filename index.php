@@ -184,7 +184,7 @@
             <div class="portfolio__imgWrapper">
               <div class="portfolio__img">
                 <img src="<?php echo get_template_directory_uri() ?>/img/becoWrap.png" alt="BecoWrap">
-                <a href="http://nkrin.com/BecoWrap/">
+                <a href="https://nkrin.com/BecoWrap/">
                   View this site&nbsp;&nbsp;
                 </a>
               </div><!-- /.portfolio__img -->
