@@ -1,26 +1,45 @@
 <?php get_header(); ?>
-
     <section class="mv">
       <div class="wrapper mv__wrapper">
-        <div class="container mv__container">
-  
-          <div class="mv__cardWrapper">
-            <div class="mv__card">
-              <p class="mv__card__head">
-                <i class="fas fa-search"></i>
-                <i class="fas fa-list-ul"></i>
-              </p><!-- /.mv__card__head -->
-              <img src="<?php echo get_template_directory_uri() ?>/img/Web 1280 – 1@2x.png" alt="">
-            </div><!-- /.mv__card -->
-          </div><!-- /.mv__cardWrapper -->
-  
-        </div><!-- /.container -->
+
+        <div class="mv__speechBubble__container">
+          <div class="mv__speechBubble__inner -first">
+            <p class="mv__speechBubble -firstText">
+              Welcome to
+              <br>
+              my portfolio
+            </p><!-- /.mv__speechBubble -->
+          </div><!-- /.mv__speechBubble__inner -->
+        </div><!-- /.mv__speechBubble__container -->
+
+        <div class="mv__imgWrapper">
+          <img src="<?php echo get_template_directory_uri() ?>/img/icon__avocado.png" alt="">
+        </div><!-- /.mv__imgWrapper -->
+
+        <div class="mv__speechBubble__container">
+          <div class="mv__speechBubble__inner -sec">
+            <p class="mv__speechBubble -secText">
+              Avocado 
+              <br>
+              lover!
+            </p><!-- /.mv__speechBubble -->
+          </div><!-- /.mv__speechBubble__inner -->
+          <div class="mv__speechBubble__inner -third">
+            <p class="mv__speechBubble -thirdText">
+              I hope you'll
+              <br> 
+              enjoy and like it!
+            </p><!-- /.mv__speechBubble -->
+          </div><!-- /.mv__speechBubble__inner -->
+        </div><!-- /.mv__speechBubble__container -->
+
       </div><!-- /.wrapper -->
     </section><!-- /.mv -->
-  
-  
+
+
     <section id="about" class="about">
       <div class="wrapper">
+
         <div class="about__container">
   
           <div class="about__head">
@@ -29,50 +48,26 @@
               <h2>
                 Nakanishi Karin
               </h2>
-
-              <div class="about__head__snsWrapper">
-                <a href="https://note.com/nakanuxxx">
-                  <i class="-note far fa-file"></i>
-                </a>
-                <a href="https://twitter.com/nakanuxxx">
-                  <i class="-twitter fab fa-twitter-square"></i>
-                </a>
-                <a href="https://github.com/N-Tarin">
-                  <i class="-github fab fa-github-square"></i>
-                </a>
-              </div><!-- /.about__head__snsWrapper -->  
             </div><!-- /.about__head__imgWrapper -->
-            <div class="about__head__textWrapper">
-              <p class="about__head__text">
-                Hello!
-                <br class="pc__only">
-                This is my portfolio
-                <br>
-                I hope you'll enjoy 
-                <br class="pc__only">
-                and like it!
-              </p><!-- /.about__head__text -->
-            </div><!-- /.about__head__textWrapper -->
           </div><!-- /.about__head -->
   
           <div class="about__foot">
             <div class="about__foot__text">
               <p>
-                初めまして！
+                <span class="about-nice">
+                  初めまして！
+                </span>  
                 <br class="sp__only">
-                <span>ナカニシ カリン</span>と申します。
+                <span class="about-strong">ナカニシ カリン </span>と申します。
                 <br>
                 英文学科を2019年卒業後、語学力をさらに伸ばすため、カナダに一年留学しました。
               </p>
               <p>
                 帰国後現在は、コーダー、フロントエンジニアを目指して、
-                <br>
                 2020年の6月から独学で勉強をしています。
               </p>
               <p>
-                現在はウェブサイトを<span>「作る工程に慣れたい」</span>というのもあり、
-                <br>
-                <span>xdデザインからの"模写10サイト終わらせる"</span>というのを目標に、勉強しています。
+                アボカドを<span class="about-strong">週４</span>で食べています!
               </p>
               <p>
                 日々の学びは
@@ -96,88 +91,109 @@
     </section><!-- /.about -->
   
   
-    <section id="skills" class="skill">
-      <div class="wrapper skill__wrapper">
-  
-        <div class="titleContainer">
-          <h2 class="title">
+    <section class="skill">
+    <div class="wrapper">
+      <div class="skill__title__container">
+        <div class="skill__titleWrapper">
+          <h2 class="skill__title">
             Skill
           </h2><!-- /.title -->
           <p class="lead">
-            今まで勉強してきたこと
-          </p><!-- /.lead -->
-        </div><!-- /.titleContainer -->
-  
-        <div class="container skill__container">
-          <ul class="skill__items">
-            <li class="skill__item">
-              <div class="skill__item__img">
-                <img src="<?php echo get_template_directory_uri() ?>/img/icons8-html-5-128.png" alt="html">
-              </div><!-- /.skill__item__img -->
-              <div class="skill__item__text">
-                <h3>HTML5</h3>
-                <p>
-                  AdobeXDを用いたデザインカンプからのコーディングが可能です。
-                </p>
-              </div><!-- /.skill__item__text -->
-            </li><!-- /.skill__item -->
-  
-            <li class="skill__item">
-              <div class="skill__item__img">
-                <img src="<?php echo get_template_directory_uri() ?>/img/icons8-css3-128.png" alt="css">
-              </div><!-- /.skill__item__img -->
-              <div class="skill__item__text">
-                <h3>CSS3</h3>
-                <p>
-                  予測、再利用、保守、拡張を意識してコードを書き、レスポンシブデザインでのページ作成、フレームワークを使用したページの実装が可能です。
-                </p>
-              </div><!-- /.skill__item__text -->
-            </li><!-- /.skill__item -->
-  
-            <li class="skill__item">
-              <div class="skill__item__img">
-                <img src="<?php echo get_template_directory_uri() ?>/img/icons8-javascript-128.png" alt="js">
-              </div><!-- /.skill__item__img -->
-              <div class="skill__item__text">
-                <h3>JavaScript</h3>
-                <p>
-                  簡易アプリ制作、jQueryでのプラグインを使ったスライダー、アコーディオン、スクロールなどの機能を追加できます。
-                </p>
-              </div><!-- /.skill__item__text -->
-            </li><!-- /.skill__item -->
-  
-            <li class="skill__item">
-              <div class="skill__item__img">
-                <img src="<?php echo get_template_directory_uri() ?>/img/icons8-wordpress-128.png" alt="wordpress">
-              </div><!-- /.skill__item__img -->
-              <div class="skill__item__text">
-                <h3>WordPress</h3>
-                <p>
-                  自作テーマを作成し、本番環境へのアップロードが可能です。
-                  <br>
-                  <span>
-                    （自作ウェブサイトあり）
-                  </span>
-                </p>
-              </div><!-- /.skill__item__text -->
-            </li><!-- /.skill__item -->
-  
-          </ul><!-- /.skill__items -->
-        </div><!-- /.container -->
+            スキル
+            </p><!-- /.lead -->
+        </div><!-- /.titleWrapper -->
+      </div><!-- /.title__container -->
+
+      <div class="container">
+        <ul class="skill__items">
+          <li class="skill__item">
+            <div class="skill__item__img">
+              <img src="<?php echo get_template_directory_uri() ?>/img/icons8-html-5-128.png" alt="html">
+            </div><!-- /.skill__item__img -->
+            <div class="skill__item__text">
+              <h3>HTML5</h3>
+              <p>
+                AdobeXDを用いたデザインカンプからのコーディングが可能です。
+              </p>
+            </div><!-- /.skill__item__text -->
+          </li><!-- /.skill__item -->
+
+          <li class="skill__item">
+            <div class="skill__item__img">
+              <img src="<?php echo get_template_directory_uri() ?>/img/icons8-css3-128.png" alt="css">
+            </div><!-- /.skill__item__img -->
+            <div class="skill__item__text">
+              <h3>CSS3</h3>
+              <p>
+                予測、再利用、保守、拡張を意識してコードを書き、レスポンシブデザインでのページ作成、フレームワークを使用したページの実装が可能です。
+              </p>
+            </div><!-- /.skill__item__text -->
+          </li><!-- /.skill__item -->
+
+          <li class="skill__item">
+            <div class="skill__item__img">
+              <img src="<?php echo get_template_directory_uri() ?>/img/icons8-javascript-128.png" alt="js">
+            </div><!-- /.skill__item__img -->
+            <div class="skill__item__text">
+              <h3>JavaScript</h3>
+              <p>
+                簡易アプリ制作、jQueryでのプラグインを使ったスライダー、アコーディオン、スクロールなどの機能を追加できます。
+              </p>
+            </div><!-- /.skill__item__text -->
+          </li><!-- /.skill__item -->
+
+          <li class="skill__item">
+            <div class="skill__item__img">
+              <img src="<?php echo get_template_directory_uri() ?>/img/icons8-wordpress-128.png" alt="wordpress">
+            </div><!-- /.skill__item__img -->
+            <div class="skill__item__text">
+              <h3>WordPress</h3>
+              <p>
+                自作テーマを作成し、本番環境へのアップロードが可能です。
+                <br>
+                <span>
+                  （自作ウェブサイトあり）
+                </span>
+              </p>
+            </div><!-- /.skill__item__text -->
+          </li><!-- /.skill__item -->
+
+          <li class="skill__item">
+            <div class="skill__item__img">
+              <img src="<?php echo get_template_directory_uri() ?>/img/icon__avocado.png" alt="avocado">
+            </div><!-- /.skill__item__img -->
+            <div class="skill__item__text">
+              <h3>Avocado</h3>
+              <p>
+                おいしい食べごろのアボカドを見分けることが得意です！
+                <br>
+                <span>
+                  （詳しくはお尋ねください。）
+                </span>
+              </p>
+            </div><!-- /.skill__item__text -->
+          </li><!-- /.skill__item -->
+
+        </ul><!-- /.skill__items -->
+      </div><!-- /.container -->
+
       </div><!-- /.wrapper -->
-    </section><!-- /.skills -->
+    </section><!-- /.skill -->
   
   
     <section id="portfolio" class="portfolio">
       <div class="wrapper">
-        <div class="titleContainer">
-          <h2 class="title">
-            Portfolio
-          </h2><!-- /.title -->
-          <p class="lead">
-            これまでの作品
-          </p><!-- /.lead -->
-        </div><!-- /.titleContainer -->
+        <div class="portfolio__title__container">
+          <div class="portfolio__titleWrapper">
+            <h2 class="portfolio__title">
+              Portfolio
+            </h2><!-- /.portfolio__title -->
+            <p class="lead">
+              作品
+            </p><!-- /.lead -->
+          </div><!-- /.portfolio__titleWrapper -->
+        </div><!-- /.portfolio__title__container -->
+
         <ul class="portfolio__items">
   
           <li class="portfolio__item">
@@ -191,9 +207,9 @@
             </div><!-- /.portfolio__imgWrapper -->
   
             <div class="portfolio__textWrapper">
-              <h3 class="portfolio__title">
+              <h3 class="portfolio__subtitle">
                 商品紹介サイト
-              </h3><!-- /.portfolio__title -->
+              </h3><!-- /.portfolio__subtitle -->
               <p class="portfolio__language">
                 WordPress,&nbsp;&nbsp;CSS,&nbsp;&nbsp;jQuery
               </p><!-- /.portfolio__language -->
@@ -219,9 +235,9 @@
             </div><!-- /.portfolio__imgWrapper -->
   
             <div class="portfolio__textWrapper">
-              <h3 class="portfolio__title">
+              <h3 class="portfolio__subtitle">
                 商品紹介サイト
-              </h3><!-- /.portfolio__title -->
+              </h3><!-- /.portfolio__subtitle -->
               <p class="portfolio__language">
                 HTML,&nbsp;&nbsp;CSS,&nbsp;&nbsp;jQuery 
               </p><!-- /.portfolio__language -->
@@ -247,9 +263,9 @@
             </div><!-- /.portfolio__imgWrapper -->
   
             <div class="portfolio__textWrapper">
-              <h3 class="portfolio__title">
+              <h3 class="portfolio__subtitle">
                 カレンダーアプリ
-              </h3><!-- /.portfolio__title -->
+              </h3><!-- /.portfolio__subtitle -->
               <p class="portfolio__language">
                 jQuery,&nbsp;&nbsp;HTML,&nbsp;&nbsp;CSS
               </p><!-- /.portfolio__language -->
@@ -273,9 +289,9 @@
             </div><!-- /.portfolio__imgWrapper -->
   
             <div class="portfolio__textWrapper">
-              <h3 class="portfolio__title">
+              <h3 class="portfolio__subtitle">
               To Do アプリ
-              </h3><!-- /.portfolio__title -->
+              </h3><!-- /.portfolio__subtitle -->
               <p class="portfolio__language">
                 Vue.js,&nbsp;&nbsp;HTML,&nbsp;&nbsp;CSS
               </p><!-- /.portfolio__language -->
@@ -290,6 +306,34 @@
                 「予定のタスク」「終わったタスク」など、
                 <br>
                 分けることもできます。
+              </p><!-- /.portfolio__text -->
+            </div><!-- /.portfolio__textWrapper -->
+          </li><!-- /.portfolio__item -->
+  
+          <li class="portfolio__item">
+            <div class="portfolio__imgWrapper">
+              <div class="portfolio__img">
+                <img src="<?php echo get_template_directory_uri() ?>/img/avocado__img.jpg" alt="todoapp">
+                <a href="">
+                  View this site&nbsp;&nbsp;
+                </a>
+            </div><!-- /.portfolio__img -->
+            </div><!-- /.portfolio__imgWrapper -->
+  
+            <div class="portfolio__textWrapper">
+              <h3 class="portfolio__subtitle">
+                アボカド栽培
+              </h3><!-- /.portfolio__subtitle -->
+              <p class="portfolio__language">
+              </p><!-- /.portfolio__language -->
+  
+              <p class="portfolio__text">
+                アボカドの種を綺麗にすすいで水につけておいて、水栽培で育てています。
+                <br>
+                ４-５年ほどで食べられるそうです。
+                <br>
+
+
               </p><!-- /.portfolio__text -->
             </div><!-- /.portfolio__textWrapper -->
           </li><!-- /.portfolio__item -->
@@ -313,17 +357,17 @@
   
     <section id="contact" class="contact">
       <div class="wrapper">
-        <div class="titleContainer">
-          <h2 class="title">
-            Contact
-          </h2><!-- /.title -->
-          <p class="lead">
-            <a class="-twitter" href="https://twitter.com/nakanuxxx">
-              Twitter
-            </a>
-            DMでもお待ちしております！
-          </p><!-- /.lead -->
-        </div><!-- /.titleContainer -->
+        <div class="contact__title__container">
+          <div class="contact__titleWrapper">
+            <h2 class="contact__title">
+              Contact
+            </h2><!-- /.contact__title -->
+            <p class="lead">
+              お問い合わせ
+            </p><!-- /.lead -->
+          </div><!-- /.contact__titleWrapper -->
+        </div><!-- /.contact__title__container -->
+
         <div class="container contact__container">
           <?php echo do_shortcode('[mwform_formkey key="5"]'); ?>
         </div><!-- /.container -->
