@@ -2,36 +2,20 @@
     <section class="mv">
       <div class="wrapper mv__wrapper">
 
-        <div class="mv__speechBubble__container">
-          <div class="mv__speechBubble__inner -first">
-            <p class="mv__speechBubble -firstText">
-              Welcome to
-              <br>
-              my portfolio
-            </p><!-- /.mv__speechBubble -->
-          </div><!-- /.mv__speechBubble__inner -->
-        </div><!-- /.mv__speechBubble__container -->
-
         <div class="mv__imgWrapper">
           <img src="<?php echo get_template_directory_uri() ?>/img/icon__avocado.png" alt="">
+          <img class="fuwafuwa" src="<?php echo get_template_directory_uri() ?>/img/icon__avocado.png" alt="">
         </div><!-- /.mv__imgWrapper -->
 
-        <div class="mv__speechBubble__container">
-          <div class="mv__speechBubble__inner -sec">
-            <p class="mv__speechBubble -secText">
-              Avocado 
-              <br>
-              lover!
-            </p><!-- /.mv__speechBubble -->
-          </div><!-- /.mv__speechBubble__inner -->
-          <div class="mv__speechBubble__inner -third">
-            <p class="mv__speechBubble -thirdText">
-              I hope you'll
-              <br> 
-              enjoy and like it!
-            </p><!-- /.mv__speechBubble -->
-          </div><!-- /.mv__speechBubble__inner -->
-        </div><!-- /.mv__speechBubble__container -->
+        <div class="mv__textWrapper">
+          <h2 class="mv__title typing">
+            こんにちは！
+            <br>
+            アボカド
+            <br>
+            大好きです
+          </h2><!-- /.mv__title -->
+        </div><!-- /.mv__textWrapper -->
 
       </div><!-- /.wrapper -->
     </section><!-- /.mv -->
@@ -67,7 +51,7 @@
                 2020年の6月から独学で勉強をしています。
               </p>
               <p>
-                アボカドを<span class="about-strong">週４</span>で食べています!
+                中学生の頃からアボカドが好きで、アボカドを<span class="about-strong">週４</span>で食べています!
               </p>
               <p>
                 日々の学びは
@@ -91,7 +75,7 @@
     </section><!-- /.about -->
   
   
-    <section class="skill">
+    <section id="skill" class="skill">
     <div class="wrapper">
       <div class="skill__title__container">
         <div class="skill__titleWrapper">
@@ -186,7 +170,7 @@
         <div class="portfolio__title__container">
           <div class="portfolio__titleWrapper">
             <h2 class="portfolio__title">
-              Portfolio
+              Work
             </h2><!-- /.portfolio__title -->
             <p class="lead">
               作品
@@ -314,7 +298,7 @@
             <div class="portfolio__imgWrapper">
               <div class="portfolio__img">
                 <img src="<?php echo get_template_directory_uri() ?>/img/avocado__img.jpg" alt="todoapp">
-                <a href="">
+                <a>
                   View this site&nbsp;&nbsp;
                 </a>
             </div><!-- /.portfolio__img -->
@@ -325,10 +309,11 @@
                 アボカド栽培
               </h3><!-- /.portfolio__subtitle -->
               <p class="portfolio__language">
+                Water,&nbsp;&nbsp;Seed,&nbsp;&nbsp;Sunlight
               </p><!-- /.portfolio__language -->
   
               <p class="portfolio__text">
-                アボカドの種を綺麗にすすいで水につけておいて、水栽培で育てています。
+                毎日綺麗な水に変えてすくすく育てることができます。
                 <br>
                 ４-５年ほどで食べられるそうです。
                 <br>

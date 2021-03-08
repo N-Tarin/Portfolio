@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/* MVタイピング */
+.typing {
+  display: inline-block;
+  opacity: 0;
+}
+
+.typing span {
+  opacity: 0;
+}
+
+.fuwafuwa {
+  animation: fuwafuwa 3s infinite ease-in-out .8s alternate;
+  display: inline-block;
+  transition: 1.5s ease-in-out;
+}
+
+@keyframes fuwafuwa {
+  0% {
+    transform:translate(0, 0) rotate(-7deg);
+  }
+  100% {
+    transform:translate(0, 0) rotate(7deg);
+  }
+}

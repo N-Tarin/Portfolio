@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 html {
   scroll-behavior: smooth;
 }
@@ -14,6 +16,10 @@ html {
   padding: 0 20px;
   position: relative;
   width: 100%;
+}
+
+.-github:hover, .-note:hover, .-twitter:hover {
+  color: #56b868;
 }
 
 :hover {
@@ -39,61 +45,162 @@ input, button, a {
   height: 10px;
 }
 
-/* header */
+/* header SP */
 .header {
   background-color: #99db7d;
+}
+
+.header__sp__wrapper {
+  box-sizing: border-box;
+  padding:  20px 20px 0;
+}
+
+.header__sp__nav {
   display: flex;
-  font-family: 'Yusei Magic', sans-serif;  justify-content: space-between;
-  padding: 10px 20px;
+  justify-content: space-between;
+  position: relative;
 }
 
-.header__logoWrapper img {
-  max-width: 50px;
-}
-
-.nav {
+.header__sp__logoWrapper {
   display: flex;
-  line-height: 50px;
 }
 
-.nav__items {
+.avocado {
+  background-color: #31811b;
+  border: 3px solid #31811b;
+  border-radius: 50%;
   color: white;
+  cursor: pointer;
+  font-weight: bold;
+  height: 50px;
+  line-height: 0.9;
+  margin: 0 0 0 10px;
+  width: 50px;
+}
+
+.avocado:hover {
+  background-color: white;
+  color: #31811b;
+}
+
+.avocado-reset {
+  background-color: #31811b;
+  border: 3px solid #31811b;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  height: 50px;
+  line-height: 0.9;
+  margin: 0 0 0 7px;
+  width: 50px;
+}
+
+.avocado-reset:hover {
+  background-color: white;
+  color: #31811b;
+}
+
+.header__sp__logo a img {
+  border-radius: 990px;
+  height: 50px;
+}
+
+.header__sp__inner {
   display: flex;
 }
 
-.nav__item {
-  margin: 0 8px;
+.header__sp__button i {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.header__sp__menu {
+  background-color: #99db7d;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translateX(260px);
+  transition: .5s;
+  width: 260px;
+  z-index: 10;
+}
+
+.header__sp__menu.open {
+  transform: translateX(0);
+}
+
+.header__sp__background {
+  background-color: rgba(0, 0, 0, 0.3);
+  content: "";
+  display: block;
+  height: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: opacity 0.5s;
+  width: 0;
+  z-index: 4;
+}
+
+.header__sp__background.open {
+  height: 100%;
+  opacity: 1;
+  width: 100%;
+}
+
+.header__sp__items {
+  color: white;
+  font-size: 20px;
+  padding: 30px 0;
+}
+
+.header__sp__item {
+  padding: 20px;
+  width: 100%;
+}
+
+.header__sp__item:hover {
+  background-color: #56b868;
+}
+
+.header__sp__item::after {
+  content: "\f054";
+  font-family: "fontAwesome";
+  font-size: 14px;
+  float: right;
+  padding: 5px 0 0;
+}
+
+.header__sp__menu__logo a img {
+  border-radius: 990px;
+  display: block;
+  height: 80px;
+  margin: 20px auto 0;
 }
 
 .nav__sns__items {
   display: flex;
+  justify-content: center;
 }
 
 .nav__sns__item {
-  margin: 0 2px;
+  color: white;
 }
 
 .nav__sns__item a i {
-  background-color: white;
-  border: 3px solid white;
-  border-radius: 50%;
-  color: #99db7d;
-  display: inline-block;
-  padding: 5px;
-  text-align: center;
-}
-
-.-note {
-  margin: 0 4px 0 0;
-  max-width: 16px;
-  transform: scale(-1, 1);
-  width: 100%;
+  font-size: 30px;
+  margin: 0 10px;
 }
 
 .nav__sns__item a i:hover {
-  border: 3px solid white;
-  background-color: #99db7d;
-  color: white;
+  color: #56b868;
+}
+
+.-note {
+  transform: scale(-1, 1);
 }
 
 
@@ -105,85 +212,46 @@ input, button, a {
 
 .mv__wrapper {
   display: flex;
-  justify-content: center;
 }
 
-.mv__imgWrapper img {
-  max-width: 300px;
-  width: 100%;
+.mv__imgWrapper {
+  display: flex;
+  flex-wrap: nowrap;
 }
 
-.mv__speechBubble__container {
-  max-width: 250px;
-  margin: 50px 0 0;
+.mv__imgWrapper img:first-child {
+  height: 360px;
+  width: 360px;
+}
+
+.mv__imgWrapper img:last-child {
+  height: 150px;
+  margin: 200px 0 0 -50px;
+  width: 150px;
+}
+
+.mv__textWrapper {
+  margin: 30px auto 0;
+}
+
+.mv__title {
+  color: white;
+  font-size: 70px;
+  line-height: 1.4;
   position: relative;
-
-  width: 100%;
-}
-
-.-first::after {
-  content: "";
-  background-image: url(../img/speechBubble.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 250px;
-  position: absolute;
-  top: 0;
-  left: 10px;
-  width: 250px;
-  z-index: 1;
-}
-
-.-firstText {
-  font-size: 25px;
-  margin: 50px 0 0 43px;
-  position: relative;
+  text-align: center;
   z-index: 2;
 }
 
-.-sec::after {
-  content: "";
-  background-image: url(../img/speechBubble.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 250px;
-  position: absolute;
-  top: -50px;
-  left: 0;
-  transform: scale(-1, 1);
-  width: 200px;
-  z-index: 1;
-}
-
-.-secText {
-  font-size: 22px;
-  margin: -10px 0 0 80px;
-  position: relative;
-  z-index: 2;
-}
-
-.-third::after {
-  content: "";
-  background-image: url(../img/speechBubble.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 250px;
-  position: absolute;
-  top: 80px;
-  left: 0;
-  transform: scale(-1, 1);
-  width: 250px;
-  z-index: 1;
-}
-
-.-thirdText {
-  font-size: 20px;
-  margin: 100px 0 0 75px;
-  position: relative;
-  z-index: 2;
-}
-
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 890px) {
+  .mv__title {
+    color: white;
+    font-size: 50px;
+    line-height: 1.4;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+  }  
 }
 
 
@@ -438,7 +506,7 @@ input, button, a {
   height: 0;
   position: absolute;
   bottom: -20px;
-  left: 44%;
+  left: 40%;
   width: 0;
 }
 
@@ -450,7 +518,7 @@ input, button, a {
   height: 0;
   position: absolute;
   bottom: -16px;
-  left: 44%;
+  left: 40%;
   width: 0;
 }
 
@@ -468,7 +536,7 @@ input, button, a {
   display: inline-block;
   position: absolute;
   top: -35px;
-  left: 44%;
+  left: 39%;
   height: 30px;
   width: 30px;
 }
@@ -705,7 +773,7 @@ input, button, a {
   height: 0;
   position: absolute;
   bottom: -20px;
-  left: 44%;
+  left: 42%;
   width: 0;
 }
 
@@ -717,7 +785,7 @@ input, button, a {
   height: 0;
   position: absolute;
   bottom: -16px;
-  left: 44%;
+  left: 42%;
   width: 0;
 }
 
@@ -735,7 +803,7 @@ input, button, a {
   display: inline-block;
   position: absolute;
   top: -35px;
-  left: 44%;
+  left: 42%;
   height: 30px;
   width: 30px;
 }
