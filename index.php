@@ -3,7 +3,7 @@
       <div class="wrapper mv__wrapper">
 
         <div class="mv__imgWrapper">
-          <img src="<?php echo get_template_directory_uri() ?>/img/icon__avocado.png" alt="">
+          <img clas="fuwafuwa" src="<?php echo get_template_directory_uri() ?>/img/icon__avocado.png" alt="">
           <img class="fuwafuwa" src="<?php echo get_template_directory_uri() ?>/img/icon__avocado.png" alt="">
         </div><!-- /.mv__imgWrapper -->
 
