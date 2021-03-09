@@ -71,6 +71,7 @@ input, button, a {
   border-radius: 50%;
   color: white;
   cursor: pointer;
+  font-family: 'Yusei Magic', sans-serif;  justify-content: space-between;
   font-weight: bold;
   height: 50px;
   line-height: 0.9;
@@ -89,6 +90,7 @@ input, button, a {
   border-radius: 50%;
   color: white;
   cursor: pointer;
+  font-family: 'Yusei Magic', sans-serif;  justify-content: space-between;
   font-weight: bold;
   height: 50px;
   line-height: 0.9;
@@ -157,16 +159,17 @@ input, button, a {
   padding: 30px 0;
 }
 
-.header__sp__item {
+.header__sp__item a {
+  display: block;
   padding: 20px;
   width: 100%;
 }
 
-.header__sp__item:hover {
+.header__sp__item a:hover {
   background-color: #56b868;
-}
+}  
 
-.header__sp__item::after {
+.header__sp__item a::after {
   content: "\f054";
   font-family: "fontAwesome";
   font-size: 14px;
@@ -913,6 +916,7 @@ input, button, a {
   color: white;
   cursor: pointer;
   display: block;
+  font-family: 'Yusei Magic', sans-serif;  justify-content: space-between;
   font-size: 18px;
   font-weight: bold;
   margin: 0 auto;
@@ -938,8 +942,61 @@ input, button, a {
   }  
 }
 
+
+/* footer */
+.footer {
+  background-color: #99db7d;
+}
+
+.footer__wrapper {
+  max-width: 1300px;
+  padding: 0 20px 20px;
+  width: 100%;
+}
+
+.footer__buttonWrapper {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.footer__button {
+  background-color: #31811b;
+  border-radius: 50%;
+  color: white;
+  display: inline-block;
+  font-size: 14px;
+  padding: 15px 20px;
+  transition: 1s;
+}
+
+.footer__button img {
+  display: block;
+  margin: 0 auto;
+  max-width: 40px;
+  width: 100%;
+}
+
+.footer__button:hover {
+  transform: translate(0, -10px);
+  transition: 1s;
+}
+
+
 /* footBar */
 .footBar {
   background-color: #994e37;
   height: 10px;
+}
+
+
+/* quiz */
+.quiz {
+  background-color: #99db7d;
+  padding: 50px 0;
+}
+
+.quiz__title {
+  font-size: 30px;
+  text-align: center;
 }

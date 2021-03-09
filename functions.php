@@ -34,14 +34,13 @@ add_action( 'wp_enqueue_scripts', 'add_google_fonts' );
 
 
 // ヘッダー
-function my_menu_init()
-{
-register_nav_menus(
-array(
-'global' => 'ヘッダーメニュー',
-'drawer' => 'ドロワーメニュー',
-)
-);
+function my_menu_init() {
+  register_nav_menus(
+    array(
+    'global' => 'ヘッダーメニュー',
+    'drawer' => 'ドロワーメニュー',
+    )
+  );
 }
 add_action('init', 'my_menu_init');
 

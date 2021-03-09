@@ -8,7 +8,7 @@
   <title>Karin's portfolio</title>
 </head>
 <body>
-  <div class="body .snowAvocado">
+  <div class="body">
 
     <div class="headBar">
     </div><!-- /.headBar -->
@@ -44,21 +44,33 @@
           <ul class="header__sp__items">
             <li class="header__sp__item">
               <a href="#about" class="js__sp__item__button">
+                <span>
+                  <i class="far fa-grin"></i>
+                </span>
                 私について
               </a>
             </li><!-- /.header__sp__item -->
             <li class="header__sp__item">
               <a href="#skill" class="js__sp__item__button">
+                <span>
+                  <i class="fas fa-cog"></i>
+                </span>
                 スキル
               </a>
             </li><!-- /.header__sp__item -->
             <li class="header__sp__item">
               <a href="#portfolio" class="js__sp__item__button">
+                <span>
+                  <i class="fas fa-laptop-code"></i>
+                </span>
                 作品
               </a>
             </li><!-- /.header__sp__item -->
             <li class="header__sp__item">
               <a href="#contact" class="js__sp__item__button">
+                <span>
+                  <i class="far fa-envelope"></i>
+                </span>
                 お問い合わせ
               </a>
             </li><!-- /.header__sp__item -->

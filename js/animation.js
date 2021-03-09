@@ -2,32 +2,30 @@ jQuery(function($){
 
   // 雪を降らす
   $('.avocado').on('click', function(){
-    if($('.body').hasClass('.snowAvocado')) {
-      $(document).ready(function(){
-        $('body').snowfall({  
-          // 雪の量 (数値)
-          flakeCount : 60,
-          // 色 (RGB)
-          // flakeColor : "",
-          // z-indexの値
-          flakeIndex : "888",
-          // 最小サイズ （数値）
-          minSize : 20,
-          // 最大サイズ（数値）
-          maxSize : 30,
-          // 最低速度（数値）
-          minSpeed : 0.5,
-          // 最高速度（数値）
-          maxSpeed : 1,
-          // 雪の形を丸にする（boolean）
-          round : true,
-          // 影をつける（boolean）
-          shadow : false,    
-          // 画像
-          image : "../img/icon__avocado.png",
-        });
+    $(document).ready(function(){
+      $('body').snowfall({  
+        // 雪の量 (数値)
+        flakeCount : 60,
+        // 色 (RGB)
+        // flakeColor : "",
+        // z-indexの値
+        flakeIndex : "888",
+        // 最小サイズ （数値）
+        minSize : 20,
+        // 最大サイズ（数値）
+        maxSize : 30,
+        // 最低速度（数値）
+        minSpeed : 0.5,
+        // 最高速度（数値）
+        maxSpeed : 1,
+        // 雪の形を丸にする（boolean）
+        round : true,
+        // 影をつける（boolean）
+        shadow : false,    
+        // 画像
+        image : "http://nkrin.com/portfolio/wp-content/themes/Portfolio/img/icon__avocado.png",
       });
-    } 
+    });
   });
 
   $('.avocado-reset').on('click', function(){
