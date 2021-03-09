@@ -8,7 +8,7 @@
   <title>Karin's portfolio</title>
 </head>
 <body>
-  <div class="body">
+  <div class="body .snowAvocado">
 
     <div class="headBar">
     </div><!-- /.headBar -->
@@ -23,7 +23,7 @@
               </a>
             </div><!-- /.header__sp__logo -->
             <button class="avocado">アボ<br>カド</button>
-            <button class="avocado-reset">リセ<br>ット</button>
+            <button class="avocado-reset">スト<br>ップ</button>
           </div><!-- /.header__logoWrapper -->
   
           <div class="header__sp__inner">  
