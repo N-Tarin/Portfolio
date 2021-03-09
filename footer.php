@@ -1,3 +1,9 @@
+  <footer class="footer">
+    <div class="wrapper">
+      
+    </div><!-- /.wrapper -->
+  </footer><!-- /.footer -->  
+
   <div class="footBar">
   </div><!-- /.footBar -->
 </div><!-- /.body -->

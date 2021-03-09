@@ -26,13 +26,25 @@ function add_google_fonts() {
   // 手書き風
   wp_enqueue_style( 'googleFont2', 'https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap">', false );
 
-  // 
+  // ふち付き
   wp_enqueue_style( 'googleFont3', 'https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap">', false );
-
-
 
 }
 add_action( 'wp_enqueue_scripts', 'add_google_fonts' );
+
+
+// ヘッダー
+function my_menu_init()
+{
+register_nav_menus(
+array(
+'global' => 'ヘッダーメニュー',
+'drawer' => 'ドロワーメニュー',
+)
+);
+}
+add_action('init', 'my_menu_init');
+
 
 
 

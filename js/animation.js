@@ -24,7 +24,7 @@ jQuery(function($){
           // 影をつける（boolean）
           shadow : false,    
           // 画像
-          image : ["https://nkrin.com/public_html/portfolio/wp-contet/themes/Portfolio/img/icon__avocado.png"],
+          image : "../img/icon__avocado.png",
         });
       });
     } 
