@@ -110,7 +110,7 @@
             <div class="skill__item__text">
               <h3>CSS3</h3>
               <p>
-                予測、再利用、保守、拡張を意識してコードを書き、レスポンシブデザインでのページ作成、フレームワークを使用したページの実装が可能です。
+                予測、再利用、保守、拡張を意識してコードを書き、レスポンシブデザインでのページ作成、フレームワークを使用したページの実装が可能です。Saas
               </p>
             </div><!-- /.skill__item__text -->
           </li><!-- /.skill__item -->
@@ -122,7 +122,7 @@
             <div class="skill__item__text">
               <h3>JavaScript</h3>
               <p>
-                簡易アプリ制作、jQueryでのプラグインを使ったスライダー、アコーディオン、スクロールなどの機能を追加できます。
+                簡易アプリ制作、jQueryでのプラグインを使ったスライダー、アコーディオン、スクロールなどの機能を追加できます。現在Vue.jsも勉強中です。
               </p>
             </div><!-- /.skill__item__text -->
           </li><!-- /.skill__item -->
@@ -196,7 +196,7 @@
                 商品紹介サイト
               </h3><!-- /.portfolio__subtitle -->
               <p class="portfolio__language">
-                WordPress,&nbsp;&nbsp;CSS,&nbsp;&nbsp;jQuery
+                WordPress,&nbsp;&nbsp;CSS,&nbsp;&nbsp;jQuery,&nbsp;&nbsp;BASE API
               </p><!-- /.portfolio__language -->
   
               <p class="portfolio__text">
